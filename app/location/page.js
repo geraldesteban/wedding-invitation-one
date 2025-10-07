@@ -1,5 +1,7 @@
+import Location from "@/app/_components/Location";
+
 function Page() {
-  return <div>LOCATION</div>;
+  return <Location />;
 }
 
 export default Page;

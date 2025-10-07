@@ -1,3 +1,16 @@
+import { Cinzel } from "next/font/google";
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+});
+
+import { Crimson_Pro } from "next/font/google";
+
+const crimsonPro = Crimson_Pro({
+  subsets: ["latin"],
+  style: ["italic"],
+});
+
 function Entourage() {
   return (
     <div className="">
@@ -18,16 +31,18 @@ function Entourage() {
           {/* Parents of the Groom */}
           <div className="text-center">
             <h2 className="text-[36px]">PARENTS OF THE GROOM</h2>
-            <div className="text-[30px]">
-              <p>Adriano Siatriz</p>
-              <p>(To be represented by: Jhosep Siatriz / Chris John Siatriz)</p>
-              <p>Cris Siatriz</p>
+            <div className="text-[21px]">
+              <p className={`${cinzel.className}`}>Adriano Siatriz</p>
+              <p className={`${crimsonPro.className}`}>
+                (To be represented by: Jhosep Siatriz / Chris John Siatriz)
+              </p>
+              <p className={`${cinzel.className}`}>Cris Siatriz</p>
             </div>
           </div>
           {/* Parents of the Bride */}
           <div className="text-center">
             <h2 className="text-[36px]">PARENTS OF THE BRIDE</h2>
-            <div className="text-[30px]">
+            <div className={`${cinzel.className} text-[21px]`}>
               <p>Wilfredo Esteban</p>
               <p>Virgie Esteban</p>
             </div>
@@ -36,29 +51,35 @@ function Entourage() {
         {/* Principal Sponsors */}
         <div>
           <h2 className="text-[36px] text-center">PRINCIPAL SPONSORS</h2>
-          <div className="flex gap-20">
-            <div className="flex flex-col text-[30px]">
-              <span>Edgardo May-at</span>
-              <span>Romeo Jaime</span>
+          <div className={`${cinzel.className}`}>
+            <div className="flex gap-20">
+              <div className="flex flex-col text-[21px]">
+                <span>Edgardo May-at</span>
+                <span>Romeo Jaime</span>
+              </div>
+              <div className="flex flex-col text-[21px]">
+                <span>Jean May-at</span>
+                <span>Selwin Jaime</span>
+              </div>
             </div>
-            <div className="flex flex-col text-[30px]">
-              <span>Jean May-at</span>
-              <span>Selwin Jaime</span>
-            </div>
+            <p className="text-[30px] text-center">Myra Balaoing</p>
           </div>
-          <p className="text-[30px] text-center">Myra Balaoing</p>
         </div>
         {/* Best Man and Maid of Honor */}
         <div className="flex gap-10 max-xl:flex-col">
           {/* Best Man */}
           <div className="text-center">
             <h2 className="text-[36px]">BEST MAN</h2>
-            <span className="text-[30px]">Jan-Jan Siatriz</span>
+            <span className={`${cinzel.className} text-[21px]`}>
+              Jan-Jan Siatriz
+            </span>
           </div>
           {/* Maid of Honor */}
           <div className="text-center">
             <h2 className="text-[36px]">MAID OF HONOR</h2>
-            <span className="text-[30px]">Mary Joy Esteban</span>
+            <span className={`${cinzel.className} text-[21px]`}>
+              Mary Joy Esteban
+            </span>
           </div>
         </div>
         {/* Groomsmen and Bridesmaids */}
@@ -66,7 +87,7 @@ function Entourage() {
           {/* Groomsmen */}
           <div className="text-center">
             <h2 className="text-[36px]">GROOMSMEN</h2>
-            <div className="flex flex-col text-[30px]">
+            <div className={`${cinzel.className} flex flex-col text-[21px]`}>
               <span>Regie Rico Michael</span>
               <span>Oski Alfonso</span>
               <span>Jerico Esteban</span>
@@ -76,7 +97,7 @@ function Entourage() {
           {/* Bridesmaids */}
           <div className="text-center">
             <h2 className="text-[36px]">BRIDESMAIDS</h2>
-            <div className="flex flex-col text-[30px]">
+            <div className={`${cinzel.className} flex flex-col text-[21px]`}>
               <span>Jude Ann Siatriz</span>
               <span>Jenny Siatriz Fabro</span>
               <span>Maria Andrea Esteban</span>

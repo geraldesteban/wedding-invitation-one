@@ -3,6 +3,7 @@ const notoSerifDisplay = Noto_Serif_Display({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
+
 import "@/app/_styles/globals.css";
 import Header from "@/app/_components/Header";
 

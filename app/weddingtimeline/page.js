@@ -1,5 +1,7 @@
+import WeddingTimeline from "@/app/_components/WeddingTimeline";
+
 function Page() {
-  return <div>WEDDING TIMELINE</div>;
+  return <WeddingTimeline />;
 }
 
 export default Page;
