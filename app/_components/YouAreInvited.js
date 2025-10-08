@@ -11,7 +11,7 @@ const cinzel = Cinzel({
 function YouAreInvited() {
   return (
     /* You are invited */
-    <div className="text-[#8f7563] bg-[#e7e4e2] text-center uppercase">
+    <div className="text-[#8f7563] bg-[#e7e4e2] text-center uppercase pb-24">
       <div className="flex flex-col text-[50px] mx-5 whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
         <span>You are invited</span>
         <span className="whitespace-normal">to the wedding celebration of</span>

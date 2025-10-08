@@ -9,7 +9,7 @@ const cinzel = Cinzel({
 
 function FrequentlyAskedQuestions() {
   return (
-    <div className="uppercase pt-[104px]">
+    <div className="uppercase pt-[104px] pb-20">
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
           Frequently asked Questions

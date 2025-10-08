@@ -28,7 +28,7 @@ function DaysLeft() {
       </div>
 
       {/* CONTENT */}
-      <div className="pt-40 pb-28 max-lg:pt-20 max-md:pt-10 max-md:pb-20">
+      <div className="pt-40 pb-28 max-lg:pt-20 max-md:pt-10 max-md:pb-32">
         <div className="relative w-full">
           <div className="mx-5">
             <Image

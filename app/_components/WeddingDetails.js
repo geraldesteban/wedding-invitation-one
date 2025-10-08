@@ -6,7 +6,7 @@ const cinzel = Cinzel({
 
 function WeddingDetails() {
   return (
-    <div className="bg-[#e7e4e2] uppercase text-[#8f7563] flex flex-col gap-5 pt-[104px]">
+    <div className="bg-[#e7e4e2] uppercase text-[#8f7563] flex flex-col gap-5 pt-[104px] pb-28">
       <div className="flex justify-center items-center">
         <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10 w-full">
           <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
@@ -63,9 +63,9 @@ function WeddingDetails() {
           guests is
         </p>
         <p className="text-[16px]">sincerely appreciated.</p>
-        <p className="text-[16px] font-bold py-16">
+        {/* <p className="text-[16px] font-bold py-16">
           Please scroll until the end to confirm your attendance.
-        </p>
+        </p> */}
       </div>
     </div>
   );
