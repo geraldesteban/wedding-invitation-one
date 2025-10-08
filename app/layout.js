@@ -6,6 +6,7 @@ const notoSerifDisplay = Noto_Serif_Display({
 
 import "@/app/_styles/globals.css";
 import Header from "@/app/_components/Header";
+import FloatingRSVP from "./_components/FloatingRSVP";
 
 export const metadata = {
   title: {
@@ -21,9 +22,9 @@ function RootLayout({ children }) {
         {/* Navigation Bar */}
         <Header />
         {/* Pages Contents */}
+        {/* Button RSVP */}
         <main>{children}</main>
-        {/* Footer */}
-        {/* <Footer /> */}
+        <FloatingRSVP />
       </body>
     </html>
   );

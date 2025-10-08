@@ -11,20 +11,22 @@ const cinzel = Cinzel({
 function YouAreInvited() {
   return (
     /* You are invited */
-    <div className="text-[#8f7563] bg-[#e7e4e2] text-center py-10 uppercase">
-      <div className="flex flex-col text-[48px] py-5">
+    <div className="text-[#8f7563] bg-[#e7e4e2] text-center uppercase">
+      <div className="flex flex-col text-[50px] mx-5 whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
         <span>You are invited</span>
-        <span>to the wedding celebration of</span>
+        <span className="whitespace-normal">to the wedding celebration of</span>
       </div>
       <div className="relative flex items-center justify-center py-5">
         <Image
           src={Invited}
           alt="Invited"
-          className="w-full h-auto object-cover opacity-70"
+          className="w-full object-cover opacity-70"
           quality={100}
           priority
         />
-        <h2 className={`absolute text-[144px] text-center z-50`}>
+        <h2
+          className={`absolute text-[144px] text-center z-50 whitespace-nowrap max-lg:text-[100px] max-md:text-[50px]`}
+        >
           ARIS & JANE
         </h2>
       </div>

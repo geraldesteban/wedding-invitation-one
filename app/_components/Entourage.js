@@ -13,10 +13,12 @@ const crimsonPro = Crimson_Pro({
 
 function Entourage() {
   return (
-    <div className="">
+    <div className="pt-[105px] max-lg:pt-[103px]">
       {/* TITLE */}
-      <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2]">
-        <h2 className="text-white text-[50px] text-center">OUR ENTOURAGE</h2>
+      <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
+        <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
+          OUR ENTOURAGE
+        </h2>
       </div>
       {/* CONTENT */}
       <div className="flex flex-col items-center gap-20 py-10 text-[#8f7563]">

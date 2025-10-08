@@ -16,34 +16,36 @@ const cinzel = Cinzel({
 
 function AttireGuide() {
   return (
-    <div className={`${cinzel.className}`}>
-      <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2]">
-        <h2 className="text-white text-[50px] text-center">ATTIRE GUIDE</h2>
+    <div className={`${cinzel.className} pt-[104px]`}>
+      <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
+        <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
+          ATTIRE GUIDE
+        </h2>
       </div>
       {/* Content */}
       <div className="text-[#8f7563] py-10">
-        <h2 className="text-[24px] text-center mb-10 font-bold">
+        <h2 className="text-[24px] text-center mb-10 font-bold mx-5">
           WE KINDLY REQUEST FORMAL ATTIRE.
         </h2>
         {/* Principal Sponsors */}
         <div className="py-10">
-          <div className="text-center">
+          <div className="text-center  mx-5">
             <h2 className="text-[21px] font-bold">PRINCIPAL SPONSORS</h2>
 
             <p className="text-[21px]">LONG GOWN / FILIPINIANA</p>
             <p className="text-[21px]">BARONG</p>
           </div>
 
-          <div className="flex justify-center flex-wrap">
+          <div className="flex justify-center max-lg:flex-wrap">
             <Image src={Filipiniana} alt="Filipiniana" />
             <Image src={Barong} alt="Filipiniana" />
           </div>
         </div>
         {/* Guests */}
-        <h2 className="text-[24px] text-center py-10 font-bold">GUESTS</h2>
+        <h2 className="text-[24px] text-center py-10 font-bold mx-5">GUESTS</h2>
         {/* Ladies */}
         <div>
-          <div className="text-center mb-10">
+          <div className="text-center mb-10  mx-5">
             <h2 className="text-[21px] font-bold">LADIES</h2>
             <p className="text-[21px]">LONG OR MINI DRESS</p>
             <p className="text-[21px]">FORMAL TOP, LONG SKIRTS, SLACKS</p>
@@ -53,7 +55,7 @@ function AttireGuide() {
         </div>
         {/* Gentleman */}
         <div>
-          <div className="text-center mb-10">
+          <div className="text-center mb-10  mx-5">
             <h2 className="text-[21px] font-bold">GENTLEMAN</h2>
             <p className="text-[21px]">FORMAL LONG- OR SHORT-SLEEVED POLO</p>
             <p className="text-[21px]">TROUSERS, SLACKS</p>
@@ -63,7 +65,7 @@ function AttireGuide() {
         </div>
         {/* Strictly not allowed */}
         <div>
-          <div className="text-center mb-10">
+          <div className="text-center mb-10  mx-5">
             <h2 className="text-[21px] font-bold">STRICTLY NOT ALLOWED</h2>
             <p className="text-[21px] uppercase">
               t-shirts, polo shirts, printed clothes, jeans, shorts, mini skirts
@@ -72,7 +74,7 @@ function AttireGuide() {
           </div>
         </div>
         {/* Kindly wear */}
-        <h2 className="text-[21px] uppercase text-center font-bold">
+        <h2 className="text-[21px] uppercase text-center font-bold  mx-5">
           Kindly wear these colors on our special day.
         </h2>
 

@@ -6,17 +6,20 @@ const cinzel = Cinzel({
 
 function WeddingDetails() {
   return (
-    <div className="bg-[#e7e4e2] uppercase text-[#8f7563] flex flex-col gap-28">
-      <div className="p-5 relative">
-        <div className="absolute bg-[#ccaf94] h-[110px] w-[40%] left-0 top-0 rounded-br-full rounded-tr-full z-50"></div>
-        <div className="absolute bg-[#d8c2b4] h-[110px] w-[40%] left-0 top-5 rounded-br-full rounded-tr-full"></div>
-        <h2 className="text-white text-[50px] z-50 absolute whitespace-nowrap">
-          OTHER WEDDING DETAILS
-        </h2>
+    <div className="bg-[#e7e4e2] uppercase text-[#8f7563] flex flex-col gap-5 pt-[104px]">
+      <div className="flex justify-center items-center">
+        <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10 w-full">
+          <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
+          <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[110px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[60px]"></div>
+          <h2 className="text-white text-[50px] text-center z-10 py-2 mx-5 whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
+            OTHER WEDDING DETAILS
+          </h2>
+        </div>
+        <div className="flex-1"></div>
       </div>
 
       {/* Content */}
-      <div className={`${cinzel.className} text-center`}>
+      <div className={`${cinzel.className} text-center mx-5`}>
         <h2 className="text-[18px] font-bold py-10">Arrival</h2>
         <p className="text-[16px]">
           The ceremony will begin at <span className="font-bold">4:00 PM</span>.

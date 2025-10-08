@@ -1,13 +1,11 @@
 import Navigation from "@/app/_components/Navigation";
+import MobileNavigation from "./MobileNavigation";
 
 function Header() {
   return (
-    <div>
-      <header className="bg-[#b6aa9d]">
-        <div className="p-10">
-          <Navigation />
-        </div>
-      </header>
+    <div className="fixed w-full z-100">
+      <Navigation />
+      <MobileNavigation />
     </div>
   );
 }
