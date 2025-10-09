@@ -13,7 +13,7 @@ const crimsonPro = Crimson_Pro({
 
 function Entourage() {
   return (
-    <div id="entourage" className="scroll-mt-[103px] max-lg:scroll-mt-[0px]">
+    <div id="entourage" className="scroll-mt-[110px] max-lg:scroll-mt-[0px]">
       {/* TITLE */}
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-center whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
@@ -44,7 +44,7 @@ function Entourage() {
             <div className="flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-[12px] max-md:gap-1">
               <p className={`${cinzel.className}`}>Adriano Siatriz</p>
               <p
-                className={`${crimsonPro.className} text-xl max-md:text-[10px]`}
+                className={`${crimsonPro.className} text-xl max-lg:text-[10px] max-md:text-[8px]`}
               >
                 (To be represented by: Jhosep Siatriz / Chris John Siatriz)
               </p>

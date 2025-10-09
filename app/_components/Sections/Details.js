@@ -8,7 +8,7 @@ function Details() {
   return (
     <div
       id="details"
-      className="bg-[#e7e4e2] uppercase text-[#8f7563] flex flex-col gap-5 scroll-mt-[104px] max-lg:scroll-mt-[0px]"
+      className="bg-[#e7e4e2] uppercase text-[#8f7563] flex flex-col gap-5 scroll-mt-[112px] max-lg:scroll-mt-[0px]"
     >
       <div className="flex justify-center items-center">
         <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10 w-full">

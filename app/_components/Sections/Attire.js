@@ -16,7 +16,7 @@ function Attire() {
   return (
     <div
       id="attire"
-      className={`${cinzel.className} scroll-mt-[104px] max-lg:scroll-mt-[0px]`}
+      className={`${cinzel.className} scroll-mt-[110px] max-lg:scroll-mt-[0px]`}
     >
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-center whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
@@ -45,9 +45,9 @@ function Attire() {
             <Image
               src={Filipiniana}
               alt="Filipiniana"
-              className="max-lg:w-[50%]"
+              className="max-2xl:w-[50%]"
             />
-            <Image src={Barong} alt="Barong" className="max-lg:w-[50%]" />
+            <Image src={Barong} alt="Barong" className="max-2xl:w-[50%]" />
           </div>
         </div>
         {/* Guests */}

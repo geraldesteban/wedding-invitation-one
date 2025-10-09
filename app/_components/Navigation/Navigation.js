@@ -30,10 +30,7 @@ function Navigation() {
   ];
 
   return (
-    <nav className="max-lg:hidden py-3 bg-[#9a7e66] flex flex-col gap-2">
-      <h2 className="text-white text-[50px] text-center max-xl:text-[40px] max-lg:text-[30px] max-md:text-[20px]">
-        ARIS JHIM & MARY JANE
-      </h2>
+    <nav className="max-lg:hidden py-11 bg-[#9a7e66] flex flex-col gap-2">
       <ul
         className={`${cinzel.className} flex justify-center items-center gap-10 text-white`}
       >

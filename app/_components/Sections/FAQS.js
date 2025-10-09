@@ -12,7 +12,7 @@ function FAQS() {
   return (
     <div
       id="faqs"
-      className="uppercase scroll-mt-[104px] max-lg:scroll-mt-[0px]"
+      className="uppercase scroll-mt-[110px] max-lg:scroll-mt-[0px]"
     >
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-center whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">

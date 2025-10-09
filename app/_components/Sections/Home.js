@@ -14,7 +14,7 @@ const crimsonPro = Crimson_Pro({
 function Home() {
   return (
     /* ARIS JHIM & MARY JANE WEDDING */
-    <main id="home" className="bg-[#e7e4e2] pt-[120px] max-lg:pt-[95px]">
+    <main className="bg-[#e7e4e2] scroll-mt-[500px] max-lg:pt-[95px]">
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-center whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
           ARIS JHIM & MARY JANE WEDDING

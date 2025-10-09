@@ -7,6 +7,7 @@ const notoSerifDisplay = Noto_Serif_Display({
 
 import "@/app/_styles/globals.css";
 import FloatingRSVP from "./_components/FloatingRSVP";
+import MobileNavigation from "./_components/Navigation/MobileNavigation";
 
 export const metadata = {
   title: {
@@ -18,7 +19,10 @@ export const metadata = {
 function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${notoSerifDisplay.className} min-h-screen`}>
+      <body className={`${notoSerifDisplay.className} min-h-screen relative`}>
+        <div className="fixed top-0 right-0 z-100">
+          <MobileNavigation />
+        </div>
         <main>{children}</main>
         <FloatingRSVP />
       </body>

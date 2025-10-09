@@ -14,7 +14,7 @@ function Location() {
   return (
     <div
       id="location"
-      className="bg-[#e7e4e2] scroll-mt-[104px] max-lg:scroll-mt-[0px]"
+      className="bg-[#e7e4e2] scroll-mt-[112px] max-lg:scroll-mt-[0px]"
     >
       <div className="flex justify-center items-center">
         <div className="flex-1"></div>

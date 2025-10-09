@@ -1,3 +1,8 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
+import Logo from "@/app/_components/Logo";
 import Header from "./_components/Navigation/Header";
 import Home from "@/app/_components/Sections/Home";
 import LoveStory from "@/app/_components/LoveStory";
@@ -12,9 +17,34 @@ import DaysLeft from "@/app/_components/DaysLeft";
 import RSVP from "@/app/_components/Sections/RSVP";
 
 function Page() {
+  const logoRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!logoRef.current) return;
+      const logoBottom = logoRef.current.getBoundingClientRect().bottom;
+      setIsSticky(logoBottom <= 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div>
-      <Header />
+    <>
+      <div ref={logoRef}>
+        <Logo />
+      </div>
+
+      <div
+        className={`w-full fixed top-0 z-100 transition-transform duration-500 ${
+          isSticky ? "translate-y-0 shadow-md" : "-translate-y-full"
+        }`}
+      >
+        <Header />
+      </div>
+
       <Home />
       <LoveStory />
       <YouAreInvited />
@@ -26,7 +56,7 @@ function Page() {
       <Location />
       <DaysLeft />
       <RSVP />
-    </div>
+    </>
   );
 }
 
