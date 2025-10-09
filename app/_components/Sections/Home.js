@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import OlsOne from "@/app/_assets/olsOne.jpg";
-import OlsTwo from "@/app/_assets/olsTwo.jpg";
-import OlsThree from "@/app/_assets/olsThree.jpg";
+import OlsOne from "@/app/_assets/Home/olsOne.jpg";
+import OlsTwo from "@/app/_assets/Home/olsTwo.jpg";
+import OlsThree from "@/app/_assets/Home/olsThree.jpg";
 
 import { Crimson_Pro } from "next/font/google";
 
@@ -14,14 +14,14 @@ const crimsonPro = Crimson_Pro({
 function Home() {
   return (
     /* ARIS JHIM & MARY JANE WEDDING */
-    <main className="bg-[#e7e4e2] pt-[105px] max-lg:pt-[95px]">
+    <main id="home" className="bg-[#e7e4e2] pt-[120px] max-lg:pt-[95px]">
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[20px]">
           ARIS JHIM & MARY JANE WEDDING
         </h2>
       </div>
       <div className="py-11 max-md:py-5">
-        <div className="flex justify-center items-stretch gap-4 mx-30 max-2xl:mx-20 max-xl:mx-10 max-lg:mx-5 max-lg:flex-col">
+        <div className="flex justify-center items-stretch gap-4 mx-10 max-lg:mx-5 max-lg:flex-col">
           <div className="flex-1 overflow-hidden border-4 border-[#b6aa9d] h-[600px]">
             <div className="w-full h-full overflow-hidden">
               <Image

@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import Image from "next/image";
 
-import SeeYouThereImage from "@/app/_assets/SeeYouThere.jpg";
+import SeeYouThereImage from "@/app/_assets/RSVP/SeeYouThere.jpg";
 
 import { Cinzel } from "next/font/google";
 
@@ -28,7 +28,7 @@ function SeeYouThere() {
   };
 
   return (
-    <div className="pt-[104px]">
+    <div className="scroll-mt-[104px] max-lg:scroll-mt-[0px]">
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
           SEE YOU THERE!
@@ -53,6 +53,7 @@ function SeeYouThere() {
 
           {/* RSVP INPUTS + BUTTON */}
           <div
+            id="rsvp"
             className={`${cinzel.className} flex flex-col items-center gap-6 max-lg:gap-4 max-2xl:mx-20 max-lg:mx-5`}
           >
             {/* First & Last Name Inputs */}

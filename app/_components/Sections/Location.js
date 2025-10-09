@@ -1,9 +1,8 @@
 import Image from "next/image";
 
-import LocationImage from "@/app/_assets/Location.png";
-import LocationBorder from "@/app/_assets/LocationBorder.png";
-import LocationIcon from "@/app/_assets/LocationIcon.png";
-import QRCode from "@/app/_assets/QRCode.png";
+import LocationBorder from "@/app/_assets/Location/LocationBorder.png";
+import LocationIcon from "@/app/_assets/Location/LocationIcon.png";
+import QRCode from "@/app/_assets/Location/QRCode.png";
 
 import { Cinzel } from "next/font/google";
 
@@ -13,7 +12,10 @@ const cinzel = Cinzel({
 
 function Location() {
   return (
-    <div className="bg-[#e7e4e2] pt-[104px]">
+    <div
+      id="location"
+      className="bg-[#e7e4e2] scroll-mt-[104px] max-lg:scroll-mt-[0px]"
+    >
       <div className="flex justify-center items-center">
         <div className="flex-1"></div>
         <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10">
@@ -25,7 +27,7 @@ function Location() {
         </div>
       </div>
 
-      <div className="pt-20 pb-20 max-md:pt-10">
+      <div className="py-20 max-lg:py-10">
         <Image
           src={LocationIcon}
           alt="Location Icon"

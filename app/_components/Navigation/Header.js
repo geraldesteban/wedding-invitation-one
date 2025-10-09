@@ -1,5 +1,5 @@
-import Navigation from "@/app/_components/Navigation";
-import MobileNavigation from "./MobileNavigation";
+import Navigation from "@/app/_components/Navigation/Navigation";
+import MobileNavigation from "@/app/_components/Navigation/MobileNavigation";
 
 function Header() {
   return (

@@ -1,15 +1,16 @@
 "use client";
 
+import Image from "next/image";
+
+import DaysLeftImage from "@/app/_assets/DaysLeft/DaysLeft.png";
+import { useCountdown } from "@/app/utils/useCountdown";
+import { countdownTarget } from "@/app/utils/coundownTarget";
+
 import { Cinzel } from "next/font/google";
 
 const cinzel = Cinzel({
   subsets: ["latin"],
 });
-
-import Image from "next/image";
-import DaysLeftImage from "@/app/_assets/DaysLeft.png";
-import { useCountdown } from "@/app/utils/useCountdown";
-import { countdownTarget } from "@/app/utils/coundownTarget";
 
 function DaysLeft() {
   const { days, hours, minutes, seconds } = useCountdown(countdownTarget);
@@ -28,7 +29,7 @@ function DaysLeft() {
       </div>
 
       {/* CONTENT */}
-      <div className="pt-40 pb-28 max-lg:pt-20 max-md:pt-10 max-md:pb-32">
+      <div className="py-20 max-lg:py-10">
         <div className="relative w-full">
           <div className="mx-5">
             <Image

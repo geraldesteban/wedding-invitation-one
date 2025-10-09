@@ -1,12 +1,10 @@
 import Image from "next/image";
 
-import Filipiniana from "@/app/_assets/filipiniana.png";
-import Barong from "@/app/_assets/barong.png";
-
-import Ladies from "@/app/_assets/ladies.png";
-import Gentleman from "@/app/_assets/gentleman.png";
-
-import ThemeColor from "@/app/_assets/themeColor.png";
+import Filipiniana from "@/app/_assets/Attire/filipiniana.png";
+import Barong from "@/app/_assets/Attire/barong.png";
+import Ladies from "@/app/_assets/Attire/ladies.png";
+import Gentleman from "@/app/_assets/Attire/gentleman.png";
+import ThemeColor from "@/app/_assets/Attire/themeColor.png";
 
 import { Cinzel } from "next/font/google";
 
@@ -14,16 +12,19 @@ const cinzel = Cinzel({
   subsets: ["latin"],
 });
 
-function AttireGuide() {
+function Attire() {
   return (
-    <div className={`${cinzel.className} pt-[104px] pb-16`}>
+    <div
+      id="attire"
+      className={`${cinzel.className} scroll-mt-[104px] max-lg:scroll-mt-[0px]`}
+    >
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
           ATTIRE GUIDE
         </h2>
       </div>
       {/* Content */}
-      <div className="text-[#8f7563] py-10">
+      <div className="text-[#8f7563] py-20 max-lg:py-10">
         <h2 className="text-[25px] text-center mb-10 font-bold mx-5 max-md:mb-5">
           WE KINDLY REQUEST FORMAL ATTIRE.
         </h2>
@@ -95,4 +96,4 @@ function AttireGuide() {
     </div>
   );
 }
-export default AttireGuide;
+export default Attire;

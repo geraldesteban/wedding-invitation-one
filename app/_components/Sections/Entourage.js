@@ -13,7 +13,7 @@ const crimsonPro = Crimson_Pro({
 
 function Entourage() {
   return (
-    <div className="pt-[105px] max-lg:pt-[103px] pb-16">
+    <div id="entourage" className="scroll-mt-[103px] max-lg:scroll-mt-[0px]">
       {/* TITLE */}
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
@@ -21,7 +21,7 @@ function Entourage() {
         </h2>
       </div>
       {/* CONTENT */}
-      <div className="flex flex-col items-center gap-20 py-10 text-[#8f7563] max-lg:gap-10 mx-5">
+      <div className="flex flex-col items-center gap-20 text-[#8f7563] py-20 max-lg:py-10 max-lg:gap-10 mx-5">
         {/* LASTNAME */}
         <div className="flex items-center gap-5 text-[42px] max-md:text-[30px]">
           <span>ESTEBAN</span>
@@ -78,7 +78,7 @@ function Entourage() {
           </div>
         </div>
         {/* Best Man and Maid of Honor */}
-        <div className="flex gap-10 max-xl:flex-col">
+        <div className="flex gap-10 max-lg:flex-col">
           {/* Best Man */}
           <div className="text-center">
             <h2 className="text-[36px] max-md:text-[23px]">BEST MAN</h2>
@@ -99,7 +99,7 @@ function Entourage() {
           </div>
         </div>
         {/* Groomsmen and Bridesmaids */}
-        <div className="flex gap-10 max-xl:flex-col">
+        <div className="flex gap-10 max-lg:flex-col">
           {/* Groomsmen */}
           <div className="text-center">
             <h2 className="text-[36px] max-md:text-[23px]">GROOMSMEN</h2>

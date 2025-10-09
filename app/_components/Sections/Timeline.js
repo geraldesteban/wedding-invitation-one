@@ -1,12 +1,15 @@
 import Image from "next/image";
-import Timeline from "@/app/_assets/timeline.png";
 
-import TimelineOne from "@/app/_assets/TimelineOne.jpg";
-import TimelineTwo from "@/app/_assets/TimelineTwo.jpg";
+import Timeline from "@/app/_assets/Timeline/Timeline.png";
+import TimelineOne from "@/app/_assets/Timeline/TimelineOne.jpg";
+import TimelineTwo from "@/app/_assets/Timeline/TimelineTwo.jpg";
 
 function WeddingTimeline() {
   return (
-    <div className="bg-[#e7e4e2] pt-[104px]">
+    <div
+      id="timeline"
+      className="bg-[#e7e4e2] scroll-mt-[103px] max-lg:scroll-mt-[0px]"
+    >
       <div className="flex justify-center items-center">
         <div className="flex-1"></div>
         <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10">
@@ -22,7 +25,7 @@ function WeddingTimeline() {
         src={Timeline}
         alt="Wedding Timeline"
         quality={80}
-        className="w-[85%] mx-auto max-sm:pt-5"
+        className="w-[85%] mx-auto max-sm:pt-5 max-lg:w-[100%]"
       />
       <div className="flex w-full max-lg:flex-col">
         <Image

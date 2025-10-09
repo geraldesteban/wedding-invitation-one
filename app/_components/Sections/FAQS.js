@@ -1,5 +1,6 @@
-import FAQImage from "@/app/_assets/faq.png";
 import Image from "next/image";
+
+import FAQSImage from "@/app/_assets/FAQS/FAQS.png";
 
 import { Cinzel } from "next/font/google";
 
@@ -7,9 +8,12 @@ const cinzel = Cinzel({
   subsets: ["latin"],
 });
 
-function FAQ() {
+function FAQS() {
   return (
-    <div className="uppercase pt-[104px] pb-20">
+    <div
+      id="faqs"
+      className="uppercase scroll-mt-[104px] max-lg:scroll-mt-[0px]"
+    >
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
         <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
           Frequently asked Questions
@@ -17,7 +21,7 @@ function FAQ() {
       </div>
       <div className="flex flex-col gap-10 py-20 max-lg:py-10">
         <div className="mx-5">
-          <Image src={FAQImage} alt="FAQ" className="mx-auto" />
+          <Image src={FAQSImage} alt="FAQ" className="mx-auto" />
         </div>
         <div className="max-lg:mx-5">
           <div
@@ -95,4 +99,4 @@ function FAQ() {
     </div>
   );
 }
-export default FAQ;
+export default FAQS;
