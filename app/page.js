@@ -14,26 +14,17 @@ import RSVP from "@/app/_components/Sections/RSVP";
 function Page() {
   return (
     <div>
-      {/* Navigation Bar */}
       <Header />
-      {/* Home */}
       <Home />
       <LoveStory />
       <YouAreInvited />
-      {/* Entourage */}
       <Entourage />
-      {/* Timeline */}
       <Timeline />
-      {/* Attire */}
       <Attire />
-      {/* Details */}
       <Details />
-      {/* FAQS */}
       <FAQS />
-      {/* Location */}
       <Location />
       <DaysLeft />
-      {/* RSVP */}
       <RSVP />
     </div>
   );

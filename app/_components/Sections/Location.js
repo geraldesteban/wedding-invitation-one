@@ -20,8 +20,8 @@ function Location() {
         <div className="flex-1"></div>
         <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10">
           <div className="bg-[#ccaf94] rounded-bl-full rounded-tl-full absolute h-full w-full -z-5"></div>
-          <div className="bg-[#d8c2b4] rounded-bl-full rounded-tl-full absolute h-[110px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[60px]"></div>
-          <h2 className="text-white text-[50px] text-center z-10 py-2 whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-lg:mx-10 max-md:text-[25px]">
+          <div className="bg-[#d8c2b4] rounded-bl-full rounded-tl-full absolute h-[85px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
+          <h2 className="text-white text-center z-10 py-2 whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
             GETTING THERE
           </h2>
         </div>
@@ -63,8 +63,8 @@ function Location() {
         <div
           className={`${cinzel.className} flex flex-col gap-5 py-10 uppercase text-[#8f7563] text-center font-bold mx-5`}
         >
-          <span className="text-[21px] max-md:text-[20px]">or</span>
-          <span className="text-[28px] max-md:text-[25px]">
+          <span className="text-3xl max-lg:text-lg max-md:text-[12px]">or</span>
+          <span className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
             scan to get directions
           </span>
         </div>

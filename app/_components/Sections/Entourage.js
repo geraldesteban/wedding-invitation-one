@@ -16,95 +16,118 @@ function Entourage() {
     <div id="entourage" className="scroll-mt-[103px] max-lg:scroll-mt-[0px]">
       {/* TITLE */}
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
-        <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
+        <h2 className="text-white text-center whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
           OUR ENTOURAGE
         </h2>
       </div>
       {/* CONTENT */}
-      <div className="flex flex-col items-center gap-20 text-[#8f7563] py-20 max-lg:py-10 max-lg:gap-10 mx-5">
-        {/* LASTNAME */}
-        <div className="flex items-center gap-5 text-[42px] max-md:text-[30px]">
-          <span>ESTEBAN</span>
-          <span>-</span>
-          <span>SIATRIZ</span>
+      <div className="flex flex-col gap-10 py-20 max-lg:gap-5 max-lg:py-10 mx-1">
+        {/* Bride and Groom */}
+        <div className="flex justify-center items-center text-[#8f7563]">
+          <div className="font-bold text-6xl max-lg:text-3xl max-md:text-xl text-right">
+            <h2>ESTEBAN</h2>
+          </div>
+          <h2 className="font-bold text-5xl max-lg:text-2xl max-md:text-lg">
+            -
+          </h2>
+          <div className="font-bold text-6xl max-lg:text-3xl max-md:text-xl">
+            <p>SIATRIZ</p>
+          </div>
         </div>
-        {/* Parents of the Groom and the Bride*/}
-        <div className="flex gap-10 max-lg:flex-col max-xl:justify-center">
-          {/* Parents of the Groom */}
-          <div className="text-center">
-            <h2 className="text-[36px] max-md:text-[23px]">
+
+        {/* Parents of the Groom and Bride */}
+        <div className="flex justify-center gap-10 max-md:gap-3 text-[#8f7563]">
+          <div className="flex flex-col gap-2 text-right flex-1 max-md:gap-1">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
               PARENTS OF THE GROOM
             </h2>
-            <div className="text-[21px] max-md:text-[18px]">
+            <div className="flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-[12px] max-md:gap-1">
               <p className={`${cinzel.className}`}>Adriano Siatriz</p>
-              <p className={`${crimsonPro.className}`}>
+              <p
+                className={`${crimsonPro.className} text-xl max-md:text-[10px]`}
+              >
                 (To be represented by: Jhosep Siatriz / Chris John Siatriz)
               </p>
               <p className={`${cinzel.className}`}>Cris Siatriz</p>
             </div>
           </div>
-          {/* Parents of the Bride */}
-          <div className="text-center">
-            <h2 className="text-[36px] max-md:text-[23px]">
+
+          <div className="flex flex-col gap-2 flex-1 max-md:gap-1">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
               PARENTS OF THE BRIDE
             </h2>
             <div
-              className={`${cinzel.className} text-[21px] max-md:text-[18px]`}
+              className={`${cinzel.className} flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-[12px] max-md:gap-1`}
             >
               <p>Wilfredo Esteban</p>
               <p>Virgie Esteban</p>
             </div>
           </div>
         </div>
+
         {/* Principal Sponsors */}
-        <div>
-          <h2 className="text-[36px] max-md:text-[23px] text-center">
+        <div className="flex flex-col gap-2 text-[#8f7563] max-md:gap-1">
+          <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm text-center">
             PRINCIPAL SPONSORS
           </h2>
-          <div className={`${cinzel.className}`}>
-            <div className="flex gap-20 max-lg:flex-col max-lg:gap-0 max-lg:text-center">
-              <div className="flex flex-col text-[21px] max-md:text-[18px]">
-                <span>Edgardo May-at</span>
-                <span>Romeo Jaime</span>
-              </div>
-              <div className="flex flex-col text-[21px] max-md:text-[18px]">
-                <span>Jean May-at</span>
-                <span>Selwin Jaime</span>
+
+          <div className="flex justify-center gap-10 max-md:gap-3 text-[#8f7563]">
+            <div className="flex flex-col gap-2 text-right flex-1 max-md:gap-1">
+              <div
+                className={`${cinzel.className} flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-[12px]`}
+              >
+                <p>Edgardo May-at</p>
+                <p>Romeo Jaime</p>
               </div>
             </div>
-            <p className="text-[21px] max-md:text-[18px] text-center">
-              Myra Balaoing
+
+            <div className="flex flex-col gap-2 flex-1 max-md:gap-1">
+              <div
+                className={`${cinzel.className} flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-[12px]`}
+              >
+                <p>Jean May-at</p>
+                <p>Selwin Jaime</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Best Man and Maid of Honor */}
+        <div className="flex justify-center gap-10 max-md:gap-3 text-[#8f7563] ">
+          {/* Best Man */}
+          <div className="flex flex-col gap-2 text-right flex-1 max-md:gap-1">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              BEST MAN
+            </h2>
+            <p
+              className={`${cinzel.className} text-3xl max-lg:text-lg max-md:text-[12px]`}
+            >
+              Jan-Jan Siatriz
+            </p>
+          </div>
+
+          {/* Maid of Honor */}
+          <div className="flex flex-col gap-2 flex-1 max-md:gap-1">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              MAID OF HONOR
+            </h2>
+            <p
+              className={`${cinzel.className} text-3xl max-lg:text-lg max-md:text-[12px]`}
+            >
+              Mary Joy Esteban
             </p>
           </div>
         </div>
-        {/* Best Man and Maid of Honor */}
-        <div className="flex gap-10 max-lg:flex-col">
-          {/* Best Man */}
-          <div className="text-center">
-            <h2 className="text-[36px] max-md:text-[23px]">BEST MAN</h2>
-            <span
-              className={`${cinzel.className} text-[21px] max-md:text-[18px]`}
-            >
-              Jan-Jan Siatriz
-            </span>
-          </div>
-          {/* Maid of Honor */}
-          <div className="text-center">
-            <h2 className="text-[36px] max-md:text-[23px]">MAID OF HONOR</h2>
-            <span
-              className={`${cinzel.className} text-[21px] max-md:text-[18px]`}
-            >
-              Mary Joy Esteban
-            </span>
-          </div>
-        </div>
+
         {/* Groomsmen and Bridesmaids */}
-        <div className="flex gap-10 max-lg:flex-col">
+        <div className="flex justify-center gap-10 max-md:gap-3 text-[#8f7563]">
           {/* Groomsmen */}
-          <div className="text-center">
-            <h2 className="text-[36px] max-md:text-[23px]">GROOMSMEN</h2>
+          <div className="flex flex-col gap-2 text-right flex-1 max-md:gap-1">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              GROOMSMEN
+            </h2>
             <div
-              className={`${cinzel.className} flex flex-col text-[21px] max-md:text-[18px]`}
+              className={`${cinzel.className} flex flex-col text-3xl max-lg:text-lg max-md:text-[12px]`}
             >
               <span>Regie Rico Michael</span>
               <span>Oski Alfonso</span>
@@ -112,11 +135,14 @@ function Entourage() {
               <span>Gerald Esteban</span>
             </div>
           </div>
+
           {/* Bridesmaids */}
-          <div className="text-center">
-            <h2 className="text-[36px] max-md:text-[23px]">BRIDESMAIDS</h2>
+          <div className="flex flex-col gap-2 flex-1 max-md:gap-1">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              BRIDESMAIDS
+            </h2>
             <div
-              className={`${cinzel.className} flex flex-col text-[21px] max-md:text-[18px]`}
+              className={`${cinzel.className} flex flex-col text-3xl max-lg:text-lg max-md:text-[12px]`}
             >
               <span>Jude Ann Siatriz</span>
               <span>Jenny Siatriz Fabro</span>

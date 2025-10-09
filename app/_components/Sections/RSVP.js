@@ -30,7 +30,7 @@ function SeeYouThere() {
   return (
     <div className="scroll-mt-[104px] max-lg:scroll-mt-[0px]">
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
-        <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
+        <h2 className="text-white text-center whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
           SEE YOU THERE!
         </h2>
       </div>
@@ -54,29 +54,29 @@ function SeeYouThere() {
           {/* RSVP INPUTS + BUTTON */}
           <div
             id="rsvp"
-            className={`${cinzel.className} flex flex-col items-center gap-6 max-lg:gap-4 max-2xl:mx-20 max-lg:mx-5`}
+            className={`${cinzel.className} flex flex-col items-center gap-6 max-lg:gap-4 max-md:gap-3 max-2xl:mx-20 max-lg:mx-5 max-md:pb-10`}
           >
             {/* First & Last Name Inputs */}
-            <div className="flex gap-5 w-full max-lg:flex-col">
-              <div className="flex flex-col gap-5">
-                <label className="text-[#8f7563] text-[20px]">First Name</label>
+            <div className="flex gap-5 w-full max-lg:flex-col max-md:gap-2">
+              <div className="flex flex-col gap-5 max-lg:gap-2">
+                <label className="text-4xl max-lg:text-2xl">First Name</label>
                 <input
                   type="text"
                   placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                  className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-[20px] py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b]"
+                  className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-4xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                   required
                 />
               </div>
-              <div className="flex flex-col gap-5">
-                <label className="text-[#8f7563] text-[20px]">Last Name</label>
+              <div className="flex flex-col gap-5 max-lg:gap-2">
+                <label className="text-4xl max-lg:text-2xl">Last Name</label>
                 <input
                   type="text"
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
-                  className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-[20px] py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b]"
+                  className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-4xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                   required
                 />
               </div>

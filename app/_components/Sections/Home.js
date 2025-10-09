@@ -16,42 +16,28 @@ function Home() {
     /* ARIS JHIM & MARY JANE WEDDING */
     <main id="home" className="bg-[#e7e4e2] pt-[120px] max-lg:pt-[95px]">
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
-        <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[20px]">
+        <h2 className="text-white text-center whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
           ARIS JHIM & MARY JANE WEDDING
         </h2>
       </div>
-      <div className="py-11 max-md:py-5">
-        <div className="flex justify-center items-stretch gap-4 mx-10 max-lg:mx-5 max-lg:flex-col">
-          <div className="flex-1 overflow-hidden border-4 border-[#b6aa9d] h-[600px]">
-            <div className="w-full h-full overflow-hidden">
+      <div className="py-10 max-md:py-2">
+        <div className="flex justify-center items-stretch gap-4 mx-40 max-lg:mx-5">
+          {[OlsOne, OlsTwo, OlsThree].map((img, idx) => (
+            <div
+              key={idx}
+              className="flex-1 border-4 border-[#b6aa9d] overflow-hidden relative aspect-[2/3]"
+            >
               <Image
-                src={OlsOne}
-                alt="Ols One"
+                src={img}
+                alt={`Ols ${idx + 1}`}
                 className="w-full h-full object-cover transition-transform duration-500 lg:hover:scale-125"
+                fill
               />
             </div>
-          </div>
-          <div className="flex-1 overflow-hidden border-4 border-[#b6aa9d] h-[600px]">
-            <div className="w-full h-full overflow-hidden">
-              <Image
-                src={OlsTwo}
-                alt="Ols Two"
-                className="w-full h-full object-cover transition-transform duration-500 lg:hover:scale-125"
-              />
-            </div>
-          </div>
-          <div className="flex-1 overflow-hidden border-4 border-[#b6aa9d] h-[600px]">
-            <div className="w-full h-full overflow-hidden">
-              <Image
-                src={OlsThree}
-                alt="Ols Three"
-                className="w-full h-full object-cover transition-transform duration-500 lg:hover:scale-125"
-              />
-            </div>
-          </div>
+          ))}
         </div>
 
-        <div className="text-[#8f7563] flex flex-col text-center text-[28px] mt-11 mx-5">
+        <div className="text-[#8f7563] flex flex-col text-center mt-11 mx-5 max-md:mt-2 text-3xl max-md:text-sm">
           <span className={`${crimsonPro.className}`}>
             “When the time is right, I, the Lord, will make it happen.”
           </span>

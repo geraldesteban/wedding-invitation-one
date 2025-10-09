@@ -34,3 +34,118 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+<div className="flex flex-col items-center gap-20 text-[#8f7563] py-20 max-lg:py-10 max-lg:gap-10 max-md:gap-5">
+        {/* LASTNAME */}
+        <div className="flex items-center gap-5 font-bold text-5xl max-lg:text-2xl max-md:text-lg max-md:gap-2">
+          <p>ESTEBAN</p>
+          <p>-</p>
+          <p>SIATRIZ</p>
+        </div>
+        {/* Parents of the Groom and the Bride*/}
+        <div className="flex gap-5 whitespace-nowrap max-md:gap-2">
+          {/* Parents of the Groom */}
+          <div className="flex flex-col gap-2">
+            <h2 className="font-bold text-5xl max-lg:text-2xl max-md:text-lg text-right">
+              PARENTS OF THE GROOM
+            </h2>
+            <div className="flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-sm text-right">
+              <p className={`${cinzel.className}`}>Adriano Siatriz</p>
+              <p className={`${crimsonPro.className} max-md:text-[12px]`}>
+                (To be represented by: Jhosep Siatriz / Chris John Siatriz)
+              </p>
+              <p className={`${cinzel.className}`}>Cris Siatriz</p>
+            </div>
+          </div>
+          <p className="text-5xl max-lg:text-2xl max-md:text-lg opacity-0">-</p>
+          {/* Parents of the Bride */}
+          <div className="flex flex-col gap-2">
+            <h2 className="font-bold text-5xl max-lg:text-2xl max-md:text-lg">
+              PARENTS OF THE BRIDE
+            </h2>
+            <div
+              className={`${cinzel.className} flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-sm`}
+            >
+              <p>Wilfredo Esteban</p>
+              <p>Virgie Esteban</p>
+            </div>
+          </div>
+        </div>
+        {/* Principal Sponsors */}
+        <div className="flex flex-col gap-2">
+          <h2 className="font-bold text-5xl max-lg:text-2xl max-md:text-lg text-center">
+            PRINCIPAL SPONSORS
+          </h2>
+          <div className={`${cinzel.className} flex flex-col gap-2`}>
+            <div className="flex gap-20 max-lg:text-center">
+              <div className="flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-sm text-right">
+                <span>Edgardo May-at</span>
+                <span>Romeo Jaime</span>
+              </div>
+              <div className="flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-sm">
+                <span>Jean May-at</span>
+                <span>Selwin Jaime</span>
+              </div>
+            </div>
+            <p className="text-3xl max-lg:text-lg max-md:text-sm text-center">
+              Myra Balaoing
+            </p>
+          </div>
+        </div>
+        {/* Best Man and Maid of Honor */}
+        <div className="flex gap-10">
+          {/* Best Man */}
+          <div className="bg-red-500 flex flex-col gap-2 text-right">
+            <h2 className="font-bold text-5xl max-lg:text-2xl max-md:text-lg">
+              BEST MAN
+            </h2>
+            <p
+              className={`${cinzel.className} text-3xl max-lg:text-lg max-md:text-sm`}
+            >
+              Jan-Jan Siatriz
+            </p>
+          </div>
+          {/* Maid of Honor */}
+          <div className="bg-red-500 flex flex-col gap-2">
+            <h2 className="font-bold text-5xl max-lg:text-2xl max-md:text-lg">
+              MAID OF HONOR
+            </h2>
+            <p
+              className={`${cinzel.className} text-3xl max-lg:text-lg max-md:text-sm`}
+            >
+              Mary Joy Esteban
+            </p>
+          </div>
+        </div>
+        {/* Groomsmen and Bridesmaids */}
+        <div className="flex gap-10">
+          {/* Groomsmen */}
+          <div className="text-center">
+            <h2 className="font-bold text-5xl max-lg:text-2xl max-md:text-lg">
+              GROOMSMEN
+            </h2>
+            <div
+              className={`${cinzel.className} flex flex-col text-3xl max-lg:text-lg max-md:text-sm`}
+            >
+              <span>Regie Rico Michael</span>
+              <span>Oski Alfonso</span>
+              <span>Jerico Esteban</span>
+              <span>Gerald Esteban</span>
+            </div>
+          </div>
+          {/* Bridesmaids */}
+          <div className="text-center">
+            <h2 className="font-bold text-5xl max-lg:text-2xl max-md:text-lg">
+              BRIDESMAIDS
+            </h2>
+            <div
+              className={`${cinzel.className} flex flex-col text-3xl max-lg:text-lg max-md:text-sm`}
+            >
+              <span>Jude Ann Siatriz</span>
+              <span>Jenny Siatriz Fabro</span>
+              <span>Maria Andrea Esteban</span>
+              <span>Jaycel Siatriz</span>
+            </div>
+          </div>
+        </div>
+      </div>

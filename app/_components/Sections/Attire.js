@@ -19,79 +19,91 @@ function Attire() {
       className={`${cinzel.className} scroll-mt-[104px] max-lg:scroll-mt-[0px]`}
     >
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
-        <h2 className="text-white text-[50px] text-center whitespace-nowrap max-xl:text-[40px] max-lg:text-[30px] max-md:text-[25px]">
+        <h2 className="text-white text-center whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
           ATTIRE GUIDE
         </h2>
       </div>
       {/* Content */}
       <div className="text-[#8f7563] py-20 max-lg:py-10">
-        <h2 className="text-[25px] text-center mb-10 font-bold mx-5 max-md:mb-5">
+        <h2 className="text-6xl max-lg:text-3xl max-md:text-xl text-center mb-10 font-bold mx-5 max-md:mb-5">
           WE KINDLY REQUEST FORMAL ATTIRE.
         </h2>
         {/* Principal Sponsors */}
         <div className="py-10 max-md:py-5">
           <div className="text-center  mx-5">
-            <h2 className="text-[21px] max-md:text-[18px] font-bold">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
               PRINCIPAL SPONSORS
             </h2>
 
-            <p className="text-[21px] max-md:text-[18px]">
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
               LONG GOWN / FILIPINIANA
             </p>
-            <p className="text-[21px] max-md:text-[18px]">BARONG</p>
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">BARONG</p>
           </div>
 
-          <div className="flex justify-center max-lg:flex-wrap">
-            <Image src={Filipiniana} alt="Filipiniana" />
-            <Image src={Barong} alt="Filipiniana" />
+          <div className="flex justify-center items-center">
+            <Image
+              src={Filipiniana}
+              alt="Filipiniana"
+              className="max-lg:w-[50%]"
+            />
+            <Image src={Barong} alt="Barong" className="max-lg:w-[50%]" />
           </div>
         </div>
         {/* Guests */}
-        <h2 className="text-[24px] text-center py-10 font-bold mx-5">GUESTS</h2>
+        <h2 className="text-6xl max-lg:text-3xl max-md:text-xl text-center py-10 font-bold mx-5">
+          GUESTS
+        </h2>
         {/* Ladies */}
         <div>
           <div className="text-center mb-10 mx-5 max-md:mb-0">
-            <h2 className="text-[21px] max-md:text-[18px] font-bold">LADIES</h2>
-            <p className="text-[21px] max-md:text-[18px]">LONG OR MINI DRESS</p>
-            <p className="text-[21px] max-md:text-[18px]">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              LADIES
+            </h2>
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              LONG OR MIDI DRESS
+            </p>
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
               FORMAL TOP, LONG SKIRTS, SLACKS
             </p>
           </div>
 
-          <Image src={Ladies} alt="Filipiniana" className="block mx-auto" />
+          <Image src={Ladies} alt="Ladies" className="block mx-auto" />
         </div>
         {/* Gentleman */}
         <div>
           <div className="text-center mb-10 mx-5 max-md:mb-0 max-md:mt-10">
-            <h2 className="text-[21px] max-md:text-[18px] font-bold">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
               GENTLEMAN
             </h2>
-            <p className="text-[21px] max-md:text-[18px]">
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
               FORMAL LONG- OR SHORT-SLEEVED POLO
             </p>
-            <p className="text-[21px] max-md:text-[18px]">TROUSERS, SLACKS</p>
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              TROUSERS, SLACKS
+            </p>
           </div>
 
-          <Image src={Gentleman} alt="Filipiniana" className="block mx-auto" />
+          <Image src={Gentleman} alt="Gentleman" className="block mx-auto" />
         </div>
         {/* Strictly not allowed */}
         <div>
           <div className="text-center mb-10 mx-5 max-md:mt-10">
-            <h2 className="text-[21px] max-md:text-[18px] font-bold">
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
               STRICTLY NOT ALLOWED
             </h2>
-            <p className="text-[21px] max-md:text-[18px] uppercase">
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px] uppercase">
               t-shirts, polo shirts, printed clothes, jeans, shorts, mini skirts
               and slippers
             </p>
           </div>
         </div>
         {/* Kindly wear */}
-        <h2 className="text-[21px] max-md:text-[18px] uppercase text-center font-bold  mx-5">
+        <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm uppercase text-center mx-5">
           Kindly wear these colors on our special day.
         </h2>
 
-        <Image src={ThemeColor} alt="Filipiniana" className="block mx-auto" />
+        <Image src={ThemeColor} alt="ThemeColor" className="block mx-auto" />
       </div>
     </div>
   );
