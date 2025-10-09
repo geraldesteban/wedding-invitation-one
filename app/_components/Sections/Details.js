@@ -13,8 +13,8 @@ function Details() {
       <div className="flex justify-center items-center">
         <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10 w-full">
           <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
-          <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[85px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
-          <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
+          <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
+          <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
             OTHER WEDDING DETAILS
           </h2>
         </div>

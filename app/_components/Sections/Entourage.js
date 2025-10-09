@@ -16,7 +16,7 @@ function Entourage() {
     <div id="entourage" className="scroll-mt-[110px] max-lg:scroll-mt-[0px]">
       {/* TITLE */}
       <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
-        <h2 className="text-white text-center whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
+        <h2 className="text-white text-center whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
           OUR ENTOURAGE
         </h2>
       </div>
