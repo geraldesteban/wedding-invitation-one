@@ -1,11 +1,12 @@
 import Home from "@/app/_components/Home";
+import LoveStory from "@/app/_components/LoveStory";
 import YouAreInvited from "@/app/_components/YouAreInvited";
-/* Home page*/
+
 function Page() {
   return (
     <div>
       <Home />
-      {/* Our Love Story */}
+      <LoveStory />
       <YouAreInvited />
     </div>
   );

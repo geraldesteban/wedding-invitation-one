@@ -1,11 +1,11 @@
-import FrequentlyAskedQuestions from "@/app/_components/FrequentlyAskedQuestions";
+import FAQ from "@/app/_components/FAQ";
 
 export const metadata = {
   title: "FAQ",
 };
 
 function Page() {
-  return <FrequentlyAskedQuestions />;
+  return <FAQ />;
 }
 
 export default Page;

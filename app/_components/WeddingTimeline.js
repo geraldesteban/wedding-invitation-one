@@ -22,7 +22,7 @@ function WeddingTimeline() {
         src={Timeline}
         alt="Wedding Timeline"
         quality={80}
-        className="w-[80%] mx-auto max-sm:pt-5"
+        className="w-[85%] mx-auto max-sm:pt-5"
       />
       <div className="flex w-full max-lg:flex-col">
         <Image

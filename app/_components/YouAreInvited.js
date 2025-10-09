@@ -20,12 +20,12 @@ function YouAreInvited() {
         <Image
           src={Invited}
           alt="Invited"
-          className="w-full object-cover opacity-70"
+          className="w-full object-cover opacity-50"
           quality={100}
           priority
         />
         <h2
-          className={`absolute text-[144px] text-center z-50 whitespace-nowrap max-lg:text-[100px] max-md:text-[50px]`}
+          className={`${cinzel.className} absolute text-[144px] text-center z-50 whitespace-nowrap max-lg:text-[100px] max-md:text-[50px]`}
         >
           ARIS & JANE
         </h2>
