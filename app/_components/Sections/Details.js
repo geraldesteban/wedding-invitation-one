@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { Cinzel } from "next/font/google";
 
 const cinzel = Cinzel({
@@ -10,16 +12,21 @@ function Details() {
       id="details"
       className="bg-[#e7e4e2] uppercase text-[#8f7563] flex flex-col gap-5 scroll-mt-[112px] max-lg:scroll-mt-[0px]"
     >
-      <div className="flex justify-center items-center">
-        <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10 w-full">
-          <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
-          <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
-          <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
-            OTHER WEDDING DETAILS
-          </h2>
-        </div>
-        <div className="flex-1"></div>
-      </div>
+      <motion.div
+        className="relative rounded-bl-full rounded-tl-full z-10 w-full"
+        initial={{ width: "1px", opacity: 0 }}
+        whileInView={{ width: "80%", opacity: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{
+          duration: 1,
+        }}
+      >
+        <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
+        <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
+        <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
+          OTHER WEDDING DETAILS
+        </h2>
+      </motion.div>
 
       {/* Content */}
       <div className="max-lg:mx-5 py-20 max-lg:py-10">

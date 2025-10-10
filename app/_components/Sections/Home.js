@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Image from "next/image";
 
 import OlsOne from "@/app/_assets/Home/olsOne.jpg";

@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Logo from "@/app/_components/Logo";
 import Header from "./_components/Navigation/Header";
 import Home from "@/app/_components/Sections/Home";
-import LoveStory from "@/app/_components/LoveStory";
+import LoveStory from "@/app/_components/Sections/LoveStory";
 import YouAreInvited from "@/app/_components/YouAreInvited";
 import Entourage from "@/app/_components/Sections/Entourage";
 import Timeline from "@/app/_components/Sections/Timeline";

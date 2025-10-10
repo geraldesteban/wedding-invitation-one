@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Image from "next/image";
 
 import Balloon from "@/app/_assets/LoveStory/balloon.png";
@@ -15,17 +17,25 @@ const cinzel = Cinzel({
 
 function LoveStory() {
   return (
-    <div className="relative">
-      <div className="flex justify-center items-center">
-        <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10 w-full">
-          <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
-          <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[85px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
-          <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-6xl max-lg:text-3xl max-md:text-xl">
-            OUR LOVE STORY
-          </h2>
-        </div>
-        <div className="flex-1"></div>
-      </div>
+    <div
+      id="lovestory"
+      className="relative scroll-mt-[112px] max-lg:scroll-mt-[0px]"
+    >
+      <motion.div
+        className="relative rounded-bl-full rounded-tl-full z-10 w-full"
+        initial={{ width: "1px", opacity: 0 }}
+        whileInView={{ width: "80%", opacity: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{
+          duration: 1,
+        }}
+      >
+        <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
+        <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[90px] max-lg:h-[60px] max-md:h-[50px]"></div>
+        <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
+          OUR LOVE STORY
+        </h2>
+      </motion.div>
       {/* Content */}
       <div className="flex items-center pt-20 max-lg:pt-10 max-md:pt-5 max-lg:flex-col">
         <div
@@ -78,7 +88,6 @@ function LoveStory() {
           className="hidden max-lg:block h-[250px] w-[30%] max-sm:h-[150px]"
         />
       </div>
-
       <Image
         src={Heart}
         alt="Heart"

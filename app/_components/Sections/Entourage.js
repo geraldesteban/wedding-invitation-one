@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { Cinzel } from "next/font/google";
 
 const cinzel = Cinzel({
@@ -15,11 +17,22 @@ function Entourage() {
   return (
     <div id="entourage" className="scroll-mt-[110px] max-lg:scroll-mt-[0px]">
       {/* TITLE */}
-      <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
-        <h2 className="text-white text-center whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
-          OUR ENTOURAGE
-        </h2>
+      <div className="relative w-full overflow-hidden">
+        <motion.div
+          className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3 mx-auto"
+          initial={{ width: "0%", opacity: 0 }}
+          whileInView={{ width: "100%", opacity: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 1,
+          }}
+        >
+          <h2 className="text-white text-center whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
+            OUR ENTOURAGE
+          </h2>
+        </motion.div>
       </div>
+
       {/* CONTENT */}
       <div className="flex flex-col gap-10 py-20 max-lg:gap-5 max-lg:py-10 mx-1">
         {/* Bride and Groom */}

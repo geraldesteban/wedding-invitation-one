@@ -39,6 +39,7 @@ function MobileNavigation() {
 
   const navItems = [
     ["HOME", "#home"],
+    ["LOVE STORY", "#lovestory"],
     ["ENTOURAGE", "#entourage"],
     ["TIMELINE", "#timeline"],
     ["ATTIRE", "#attire"],

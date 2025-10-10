@@ -1,4 +1,7 @@
 "use client";
+
+import { motion } from "framer-motion";
+
 import { useState } from "react";
 
 import Image from "next/image";
@@ -28,11 +31,21 @@ function SeeYouThere() {
   };
 
   return (
-    <div className="scroll-mt-[104px] max-lg:scroll-mt-[0px]">
-      <div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3">
-        <h2 className="text-white text-center whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
-          SEE YOU THERE!
-        </h2>
+    <div id="rsvp" className="scroll-mt-[112px] max-lg:scroll-mt-[0px]">
+      <div className="relative w-full overflow-hidden">
+        <motion.div
+          className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3 mx-auto"
+          initial={{ width: "0%", opacity: 0 }}
+          whileInView={{ width: "100%", opacity: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
+          <h2 className="text-white text-center whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
+            SEE YOU THERE!
+          </h2>
+        </motion.div>
       </div>
       <div className="flex items-center max-lg:flex-col max-lg:gap-10">
         <Image
@@ -53,7 +66,6 @@ function SeeYouThere() {
 
           {/* RSVP INPUTS + BUTTON */}
           <div
-            id="rsvp"
             className={`${cinzel.className} flex flex-col items-center gap-6 max-lg:gap-4 max-md:gap-3 max-2xl:mx-20 max-lg:mx-5 max-lg:pb-10`}
           >
             {/* First & Last Name Inputs */}

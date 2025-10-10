@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Image from "next/image";
 
 import Timeline from "@/app/_assets/Timeline/Timeline.png";
@@ -10,14 +12,24 @@ function WeddingTimeline() {
       id="timeline"
       className="bg-[#e7e4e2] scroll-mt-[112px] max-lg:scroll-mt-[0px]"
     >
-      <div className="flex justify-center items-center">
-        <div className="flex-1"></div>
-        <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10">
-          <div className="bg-[#ccaf94] rounded-bl-full rounded-tl-full absolute h-full w-full -z-5"></div>
-          <div className="bg-[#d8c2b4] rounded-bl-full rounded-tl-full absolute h-[75px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
-          <h2 className="text-white text-center z-10 py-2 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
-            WEDDING TIMELINE
-          </h2>
+      <div className="relative w-full overflow-x-clip">
+        <div className="flex justify-end w-full">
+          <motion.div
+            className="relative rounded-bl-full rounded-tl-full z-10"
+            initial={{ width: "1px", opacity: 0 }}
+            whileInView={{ width: "80%", opacity: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{
+              duration: 1,
+              ease: "easeInOut",
+            }}
+          >
+            <div className="bg-[#ccaf94] rounded-bl-full rounded-tl-full absolute inset-0 -z-5"></div>
+            <div className="bg-[#d8c2b4] rounded-bl-full rounded-tl-full absolute inset-0 h-[75px] -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
+            <h2 className="text-white text-center z-10 py-2 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
+              WEDDING TIMELINE
+            </h2>
+          </motion.div>
         </div>
       </div>
 
