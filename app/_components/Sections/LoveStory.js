@@ -48,7 +48,12 @@ function LoveStory() {
           <p>2007 - We first met</p>
           <p>2023 - Reunited and became a couple</p>
           <p>2025 - We’re getting married</p>
-          <Image src={Balloon} alt="Balloon" className="max-lg:hidden" />
+          <Image
+            src={Balloon}
+            alt="Balloon"
+            className="max-lg:hidden"
+            quality={100}
+          />
         </motion.div>
         <motion.div
           className="flex-1 max-lg:py-10"
@@ -65,6 +70,7 @@ function LoveStory() {
                   src={BeachTwo}
                   alt="Beach Two"
                   className="w-full h-[100%] transition-transform duration-500 lg:hover:scale-125"
+                  quality={100}
                 />
               </div>
             </div>
@@ -76,6 +82,7 @@ function LoveStory() {
                   src={BeachThree}
                   alt="Beach Three"
                   className="w-full h-[100%] transition-transform duration-500 lg:hover:scale-125"
+                  quality={100}
                 />
               </div>
             </div>
@@ -87,13 +94,14 @@ function LoveStory() {
                   src={BeachOne}
                   alt="Beach One"
                   className="w-full h-[100%] transition-transform duration-500 lg:hover:scale-125"
+                  quality={100}
                 />
               </div>
             </div>
           </div>
         </motion.div>
         <motion.div
-          className="w-full"
+          className="w-full hidden max-lg:block"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
@@ -102,7 +110,8 @@ function LoveStory() {
           <Image
             src={Balloon}
             alt="Balloon"
-            className="hidden max-lg:block h-[250px] w-[30%] max-sm:h-[150px] mx-auto"
+            className="h-[250px] w-[30%] max-sm:h-[150px] mx-auto"
+            quality={100}
           />
         </motion.div>
       </div>
@@ -110,6 +119,7 @@ function LoveStory() {
         src={Heart}
         alt="Heart"
         className="absolute top-10 right-0 -z-50"
+        quality={100}
       />
     </div>
   );

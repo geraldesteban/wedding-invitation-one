@@ -51,6 +51,7 @@ function Location() {
               src={LocationBorder}
               alt="Location Border"
               className="block w-full max-w-[900px]"
+              quality={100}
             />
 
             <a
@@ -84,6 +85,7 @@ function Location() {
           src={QRCode}
           alt="QRCode"
           className="border-15 rounded-md border-[#ccaf94] mx-auto"
+          quality={100}
         />
       </div>
     </div>

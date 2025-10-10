@@ -19,7 +19,9 @@ export const metadata = {
 function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${notoSerifDisplay.className} min-h-screen relative`}>
+      <body
+        className={`${notoSerifDisplay.className} min-h-screen relative w-full`}
+      >
         <div className="fixed top-0 right-0 z-100">
           <MobileNavigation />
         </div>

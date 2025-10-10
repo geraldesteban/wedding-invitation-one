@@ -36,35 +36,49 @@ function DaysLeft() {
               src={DaysLeftImage}
               alt="Days Left"
               className="mx-auto rounded-4xl opacity-30"
+              quality={100}
             />
           </div>
 
           <div
             className={`absolute inset-0 flex flex-col items-center justify-center text-[#8f7563] ${cinzel.className}`}
           >
-            <div className="flex gap-10 text-center max-md:gap-5">
+            <div className="flex justify-center items-end text-center">
+              {/* DAYS */}
               <div className="flex flex-col items-center">
-                <span className="text-9xl font-semibold max-md:text-8xl max-sm:text-4xl">
+                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
                   {days}
+                  <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                    :
+                  </span>
                 </span>
                 <span className="text-3xl font-semibold max-sm:text-xl">
                   DAYS
                 </span>
               </div>
+              {/* HOURS */}
               <div className="flex flex-col items-center">
-                <span className="text-9xl font-semibold max-md:text-8xl max-sm:text-4xl">
+                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
                   {hours}
+                  <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                    :
+                  </span>
                 </span>
                 <span className="text-3xl font-bold max-sm:text-xl">HOURS</span>
               </div>
+              {/* MINUTES */}
               <div className="flex flex-col items-center">
-                <span className="text-9xl font-semibold max-md:text-8xl max-sm:text-4xl">
+                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
                   {minutes}
+                  <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                    :
+                  </span>
                 </span>
                 <span className="text-3xl font-bold max-sm:text-xl">MINS</span>
               </div>
+              {/* SECONDS */}
               <div className="flex flex-col items-center">
-                <span className="text-9xl font-semibold max-md:text-8xl max-sm:text-4xl">
+                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
                   {seconds}
                 </span>
                 <span className="text-3xl font-bold max-sm:text-xl">SECS</span>

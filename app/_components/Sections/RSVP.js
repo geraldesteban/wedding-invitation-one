@@ -52,6 +52,7 @@ function SeeYouThere() {
           src={SeeYouThereImage}
           alt="See You There"
           className="w-[50%] max-lg:w-full"
+          quality={100}
         />
         <div className="text-[#7f523d] uppercase flex flex-col gap-48 mx-auto font-light max-lg:mb-10 max-lg:gap-10">
           {/* RSVP DATE */}

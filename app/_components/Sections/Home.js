@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import Image from "next/image";
 
 import OlsOne from "@/app/_assets/Home/olsOne.jpg";
@@ -34,6 +32,7 @@ function Home() {
                 alt={`Ols ${idx + 1}`}
                 className="w-full h-full object-cover transition-transform duration-500 lg:hover:scale-125"
                 fill
+                quality={100}
               />
             </div>
           ))}

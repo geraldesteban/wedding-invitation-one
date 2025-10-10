@@ -33,42 +33,78 @@ function Details() {
         <div
           className={`${cinzel.className} flex flex-col gap-10 max-lg:gap-5 text-center w-[50%] mx-auto max-lg:w-full`}
         >
-          <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
-            Arrival
-          </h2>
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
-            The ceremony will begin at{" "}
-            <span className="font-bold">4:00 PM</span>. We kindly ask our guests
-            to arrive at <span className="font-bold">3:00 PM</span> to settle
-            in, find their seats, and be fully present for our special moment.
-          </p>
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              Arrival
+            </h2>
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              The ceremony will begin at{" "}
+              <span className="font-bold">4:00 PM</span>. We kindly ask our
+              guests to arrive at <span className="font-bold">3:00 PM</span> to
+              settle in, find their seats, and be fully present for our special
+              moment.
+            </p>
+          </motion.div>
 
-          <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
-            Gift
-          </h2>
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
-            Your presence at our wedding is the greatest gift for us. Should you
-            wish to bless us more, we would deeply appreciate monetary gifts
-            rather than in-kind, as these will help us begin our life together.
-          </p>
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              Gift
+            </h2>
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              Your presence at our wedding is the greatest gift for us. Should
+              you wish to bless us more, we would deeply appreciate monetary
+              gifts rather than in-kind, as these will help us begin our life
+              together.
+            </p>
+          </motion.div>
 
-          <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
-            RSVP
-          </h2>
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
-            Please confirm your attendance on or before October 25, 2025. Kindly
-            note that only those who confirm their attendance will be included
-            in the final guest list. For us to keep the celebration organized,
-            those who are not on the final guest list will not be allowed to
-            enter the venue.
-          </p>
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              RSVP
+            </h2>
+            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              Please confirm your attendance on or before October 25, 2025.
+              Kindly note that only those who confirm their attendance will be
+              included in the final guest list. For us to keep the celebration
+              organized, those who are not on the final guest list will not be
+              allowed to enter the venue.
+            </p>
+          </motion.div>
+
+          <motion.p
+            className="text-3xl max-lg:text-lg max-md:text-[12px]"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1 }}
+          >
             Your cooperation in respecting our policy of not bringing uninvited
             guests issincerely appreciated.
-          </p>
-          {/* <p className="text-[16px] font-bold py-16">
-          Please scroll until the end to confirm your attendance.
-        </p> */}
+          </motion.p>
+          <motion.p
+            className="text-3xl max-lg:text-lg max-md:text-[12px] font-bold"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1 }}
+          >
+            Please scroll until the end to confirm your attendance.
+          </motion.p>
         </div>
       </div>
     </div>

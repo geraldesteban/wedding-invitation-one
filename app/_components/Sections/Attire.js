@@ -37,76 +37,170 @@ function Attire() {
       </div>
       {/* Content */}
       <div className="text-[#8f7563] py-20 max-lg:py-10 flex flex-col gap-10">
-        <h2 className="text-5xl max-lg:text-3xl max-md:text-xl text-center font-bold">
-          WE KINDLY REQUEST FORMAL ATTIRE.
-        </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="text-4xl max-lg:text-3xl max-md:text-xl text-center font-bold">
+            WE KINDLY REQUEST FORMAL ATTIRE.
+          </h2>
+        </motion.div>
         {/* Principal Sponsors */}
-        <div className="text-center mx-5">
-          <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+        <motion.div
+          className="text-center mx-5"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
             PRINCIPAL SPONSORS
           </h2>
 
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+          <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
             LONG GOWN / FILIPINIANA
           </p>
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">BARONG</p>
-        </div>
+          <p className="text-2xl max-lg:text-lg max-md:text-[12px]">BARONG</p>
+        </motion.div>
         {/* Filipiniana Barong */}
-        <div className="flex justify-center items-center">
+        <motion.div
+          className="flex justify-center items-center"
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
+        >
           <Image
             src={Filipiniana}
             alt="Filipiniana"
             className="max-2xl:w-[50%]"
+            quality={100}
           />
-          <Image src={Barong} alt="Barong" className="max-2xl:w-[50%]" />
-        </div>
+          <Image
+            src={Barong}
+            alt="Barong"
+            className="max-2xl:w-[50%]"
+            quality={100}
+          />
+        </motion.div>
         {/* Guests */}
-        <h2 className="text-5xl max-lg:text-3xl max-md:text-xl text-center font-bold mx-5">
-          GUESTS
-        </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="text-4xl max-lg:text-3xl max-md:text-xl text-center font-bold mx-5">
+            GUESTS
+          </h2>
+        </motion.div>
         {/* Ladies */}
-        <div className="text-center mx-5">
-          <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+        <motion.div
+          className="text-center mx-5"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
             LADIES
           </h2>
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+          <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
             LONG OR MIDI DRESS
           </p>
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+          <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
             FORMAL TOP, LONG SKIRTS, SLACKS
           </p>
-        </div>
-        <Image src={Ladies} alt="Ladies" className="block mx-auto" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            src={Ladies}
+            alt="Ladies"
+            className="block mx-auto"
+            quality={100}
+          />
+        </motion.div>
+
         {/* Gentleman */}
-        <div className="text-center mx-5">
-          <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+        <motion.div
+          className="text-center mx-5"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
             GENTLEMAN
           </h2>
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+          <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
             FORMAL LONG- OR SHORT-SLEEVED POLO
           </p>
-          <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+          <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
             TROUSERS, SLACKS
           </p>
-        </div>
-        <Image src={Gentleman} alt="Gentleman" className="block mx-auto" />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            src={Gentleman}
+            alt="Gentleman"
+            className="block mx-auto"
+            quality={100}
+          />
+        </motion.div>
         {/* Strictly not allowed */}
         <div>
-          <div className="text-center">
-            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
               STRICTLY NOT ALLOWED
             </h2>
-            <p className="text-3xl max-lg:text-lg max-md:text-[12px] uppercase">
+            <p className="text-2xl max-lg:text-lg max-md:text-[12px] uppercase">
               t-shirts, polo shirts, printed clothes, jeans, shorts, mini skirts
               and slippers
             </p>
-          </div>
+          </motion.div>
         </div>
         {/* Kindly wear */}
-        <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm uppercase text-center mx-5">
+        <motion.h2
+          className="font-bold text-3xl max-lg:text-2xl max-md:text-sm uppercase text-center mx-5"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
           Kindly wear these colors on our special day.
-        </h2>
-        <Image src={ThemeColor} alt="ThemeColor" className="block mx-auto" />
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            src={ThemeColor}
+            alt="ThemeColor"
+            className="block mx-auto"
+            quality={100}
+          />
+        </motion.div>
       </div>
     </div>
   );

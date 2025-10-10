@@ -33,23 +33,46 @@ function WeddingTimeline() {
         </div>
       </div>
 
-      <Image
-        src={Timeline}
-        alt="Wedding Timeline"
-        quality={80}
-        className="w-[85%] mx-auto max-sm:pt-5 max-lg:w-[100%]"
-      />
+      <motion.div
+        initial={{ opacity: 0, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 1 }}
+      >
+        <Image
+          src={Timeline}
+          alt="Wedding Timeline"
+          quality={100}
+          className="w-[85%] mx-auto max-sm:pt-5 max-lg:w-[100%]"
+        />
+      </motion.div>
       <div className="flex w-full max-lg:flex-col">
-        <Image
-          src={TimelineOne}
-          alt="Timeline One"
-          className="w-[50%] max-lg:w-[100%]"
-        />
-        <Image
-          src={TimelineTwo}
-          alt="Timeline Two"
-          className="w-[50%] max-lg:w-[100%]"
-        />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            src={TimelineOne}
+            alt="Timeline One"
+            quality={100}
+            className="w-full h-full"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            src={TimelineTwo}
+            alt="Timeline Two"
+            quality={100}
+            className="w-full h-full"
+          />
+        </motion.div>
       </div>
     </div>
   );

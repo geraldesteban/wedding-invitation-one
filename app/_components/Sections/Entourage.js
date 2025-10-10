@@ -34,7 +34,13 @@ function Entourage() {
       </div>
 
       {/* CONTENT */}
-      <div className="flex flex-col gap-10 py-20 max-lg:gap-5 max-lg:py-10 mx-1">
+      <motion.div
+        className="flex flex-col gap-10 py-20 max-lg:gap-5 max-lg:py-10 mx-1"
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ duration: 1 }}
+      >
         {/* Bride and Groom */}
         <div className="flex justify-center items-center text-[#8f7563]">
           <div className="font-bold text-6xl max-lg:text-3xl max-md:text-xl text-right">
@@ -164,7 +170,7 @@ function Entourage() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
