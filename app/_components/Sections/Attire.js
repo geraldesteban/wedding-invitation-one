@@ -137,7 +137,7 @@ function Attire() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
-            GENTLEMAN
+            GENTLEMEN
           </h2>
           <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
             FORMAL LONG- OR SHORT-SLEEVED POLO
