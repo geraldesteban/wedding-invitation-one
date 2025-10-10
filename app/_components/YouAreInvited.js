@@ -69,7 +69,7 @@ function YouAreInvited() {
 
         <motion.h2
           style={{ y }}
-          className={`${cinzel.className} absolute text-[200px] text-center z-50 whitespace-nowrap max-lg:text-[100px] max-md:text-[50px]`}
+          className={`${cinzel.className} absolute text-[200px] max-2xl:text-[175px] max-xl:text-[150px] text-center z-50 whitespace-nowrap max-lg:text-[100px] max-md:text-[50px]`}
         >
           ARIS & JANE
         </motion.h2>
