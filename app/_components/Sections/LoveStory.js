@@ -38,15 +38,25 @@ function LoveStory() {
       </motion.div>
       {/* Content */}
       <div className="flex items-center pt-20 max-lg:pt-10 max-md:pt-5 max-lg:flex-col">
-        <div
+        <motion.div
           className={`${cinzel.className} flex flex-col gap-10 text-[#8f7563] text-3xl max-md:text-sm max-md:gap-5 ml-10 max-lg:ml-5 max-lg:self-start z-50`}
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
         >
           <p>2007 - We first met</p>
           <p>2023 - Reunited and became a couple</p>
           <p>2025 - We’re getting married</p>
           <Image src={Balloon} alt="Balloon" className="max-lg:hidden" />
-        </div>
-        <div className="flex-1 max-lg:py-10">
+        </motion.div>
+        <motion.div
+          className="flex-1 max-lg:py-10"
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
+        >
           <div className="flex justify-center items-end mx-20 max-lg:static max-2xl:mx-15 max-xl:mx-10 max-lg:mx-15 max-lg:mt-5 max-md:mx-10">
             {/* Left image */}
             <div className="flex-1 overflow-hidden border-4 border-gray-300 h-[100%] -rotate-12 z-0">
@@ -81,12 +91,20 @@ function LoveStory() {
               </div>
             </div>
           </div>
-        </div>
-        <Image
-          src={Balloon}
-          alt="Balloon"
-          className="hidden max-lg:block h-[250px] w-[30%] max-sm:h-[150px]"
-        />
+        </motion.div>
+        <motion.div
+          className="w-full"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            src={Balloon}
+            alt="Balloon"
+            className="hidden max-lg:block h-[250px] w-[30%] max-sm:h-[150px] mx-auto"
+          />
+        </motion.div>
       </div>
       <Image
         src={Heart}
