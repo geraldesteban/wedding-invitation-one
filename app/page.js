@@ -49,13 +49,13 @@ function Page() {
       <LoveStory />
       <YouAreInvited />
       <Entourage />
-      {/* <Timeline /> */}
+      <Timeline />
       <Attire />
-      {/* <Details />
+      <Details />
       <FAQS />
       <Location />
       <DaysLeft />
-      <RSVP /> */}
+      <RSVP />
     </>
   );
 }

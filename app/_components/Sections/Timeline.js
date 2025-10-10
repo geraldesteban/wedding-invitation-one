@@ -12,7 +12,7 @@ function WeddingTimeline() {
       id="timeline"
       className="bg-[#e7e4e2] scroll-mt-[112px] max-lg:scroll-mt-[0px]"
     >
-      <div className="relative w-full overflow-x-clip">
+      <div className="relative w-full [overflow-x:hidden] overflow-x-clip">
         <div className="flex justify-end w-full">
           <motion.div
             className="relative rounded-bl-full rounded-tl-full z-10"
