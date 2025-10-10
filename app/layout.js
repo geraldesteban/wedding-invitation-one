@@ -20,7 +20,7 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${notoSerifDisplay.className} min-h-screen relative w-full`}
+        className={`${notoSerifDisplay.className} min-h-screen relative w-full overflow-x-hidden`}
       >
         <div className="fixed top-0 right-0 z-100">
           <MobileNavigation />
