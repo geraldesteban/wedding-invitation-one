@@ -67,29 +67,29 @@ function SeeYouThere() {
 
           {/* RSVP INPUTS + BUTTON */}
           <div
-            className={`${cinzel.className} flex flex-col items-center gap-6 max-lg:gap-4 max-md:gap-3 max-2xl:mx-20 max-lg:mx-5 max-lg:pb-10`}
+            className={`${cinzel.className} flex flex-col items-center gap-6 max-lg:gap-4 max-md:gap-3 max-2xl:mx-20 max-lg:mx-5 max-xl:pb-10`}
           >
             {/* First & Last Name Inputs */}
             <div className="flex gap-5 w-full max-lg:flex-col max-md:gap-2">
               <div className="flex flex-col gap-5 max-lg:gap-2">
-                <label className="text-4xl max-lg:text-2xl">First Name</label>
+                <label className="text-4xl max-xl:text-2xl">First Name</label>
                 <input
                   type="text"
                   placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                  className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-2xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
+                  className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-1xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                   required
                 />
               </div>
               <div className="flex flex-col gap-5 max-lg:gap-2">
-                <label className="text-4xl max-lg:text-2xl">Last Name</label>
+                <label className="text-4xl max-xl:text-2xl">Last Name</label>
                 <input
                   type="text"
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
-                  className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-2xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
+                  className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-1xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                   required
                 />
               </div>
