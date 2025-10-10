@@ -31,7 +31,7 @@ function Location() {
             }}
           >
             <div className="bg-[#ccaf94] rounded-bl-full rounded-tl-full absolute inset-0 -z-5"></div>
-            <div className="bg-[#d8c2b4] rounded-bl-full rounded-tl-full absolute inset-0 h-[75px] -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
+            <div className="bg-[#d8c2b4] rounded-bl-full rounded-tl-full absolute inset-0 h-[75px] -z-10 max-xl:h-[90px] max-lg:h-[60px] max-md:h-[50px]"></div>
             <h2 className="text-white text-center z-10 py-2 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
               GETTING THERE
             </h2>

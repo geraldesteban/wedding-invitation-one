@@ -33,7 +33,7 @@ function Navigation() {
   return (
     <nav className="max-lg:hidden py-11 bg-[#9a7e66] flex flex-col gap-2">
       <ul
-        className={`${cinzel.className} flex justify-center items-center gap-10 text-white`}
+        className={`${cinzel.className} flex justify-center items-center gap-10 max-2xl:gap-7 text-white`}
       >
         {navItems.map(([label, id]) => (
           <li key={id}>

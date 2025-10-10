@@ -51,6 +51,8 @@ function Page() {
       <Entourage />
       <Timeline />
       <Attire />
+      <Details />
+      <FAQS />
       <Location />
       <DaysLeft />
       <RSVP />

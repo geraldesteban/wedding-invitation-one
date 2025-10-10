@@ -22,7 +22,7 @@ function Details() {
         }}
       >
         <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
-        <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
+        <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[90px] max-lg:h-[60px] max-md:h-[50px]"></div>
         <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
           OTHER WEDDING DETAILS
         </h2>
@@ -34,7 +34,7 @@ function Details() {
           className={`${cinzel.className} flex flex-col gap-10 max-lg:gap-5 text-center w-[50%] mx-auto max-lg:w-full`}
         >
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
@@ -52,7 +52,7 @@ function Details() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
@@ -69,7 +69,7 @@ function Details() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
@@ -88,7 +88,7 @@ function Details() {
 
           <motion.p
             className="text-3xl max-lg:text-lg max-md:text-[12px]"
-            initial={{ opacity: 0, x: -40 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
@@ -98,7 +98,7 @@ function Details() {
           </motion.p>
           <motion.p
             className="text-3xl max-lg:text-lg max-md:text-[12px] font-bold"
-            initial={{ opacity: 0, x: 40 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
