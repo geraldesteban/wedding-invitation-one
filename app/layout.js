@@ -6,8 +6,11 @@ const notoSerifDisplay = Noto_Serif_Display({
 });
 
 import "@/app/_styles/globals.css";
+
 import FloatingRSVP from "./_components/FloatingRSVP";
 import MobileNavigation from "./_components/Navigation/MobileNavigation";
+
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: {
@@ -26,6 +29,27 @@ function RootLayout({ children }) {
           <MobileNavigation />
         </div>
         <main>{children}</main>
+        <Toaster
+          position="top-center"
+          gutter={12}
+          containerStyle={{ margin: "8px" }}
+          toastOptions={{
+            success: {
+              duration: 3000,
+            },
+            error: {
+              duration: 5000,
+            },
+            style: {
+              fontSize: "16px",
+              maxWidth: "500px",
+              padding: "16px 24px",
+              backgroundColor: "white",
+              color: "black",
+              zIndex: 100,
+            },
+          }}
+        />
         <FloatingRSVP />
       </body>
     </html>
