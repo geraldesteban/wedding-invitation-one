@@ -43,7 +43,7 @@ function WeddingTimeline() {
           src={Timeline}
           alt="Wedding Timeline"
           quality={100}
-          className="w-[85%] mx-auto max-sm:pt-5 max-lg:w-[100%]"
+          className="w-[80%] mx-auto max-sm:pt-5 max-lg:w-[100%]"
         />
       </motion.div>
       <div className="flex w-full max-lg:flex-col">

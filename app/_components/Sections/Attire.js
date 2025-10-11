@@ -42,6 +42,7 @@ function Attire() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.5 }}
+          className="mx-5"
         >
           <h2 className="text-4xl max-lg:text-3xl max-md:text-xl text-center font-bold">
             WE KINDLY REQUEST FORMAL ATTIRE.
@@ -66,7 +67,7 @@ function Attire() {
         </motion.div>
         {/* Filipiniana Barong */}
         <motion.div
-          className="flex justify-center items-center"
+          className="flex justify-center items-center mx-5"
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false, amount: 0.5 }}
@@ -119,6 +120,7 @@ function Attire() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 1 }}
+          className="mx-5"
         >
           <Image
             src={Ladies}
@@ -152,6 +154,7 @@ function Attire() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 1 }}
+          className="mx-5"
         >
           <Image
             src={Gentleman}
@@ -161,23 +164,21 @@ function Attire() {
           />
         </motion.div>
         {/* Strictly not allowed */}
-        <div>
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
-              STRICTLY NOT ALLOWED
-            </h2>
-            <p className="text-2xl max-lg:text-lg max-md:text-[12px] uppercase">
-              t-shirts, polo shirts, printed clothes, jeans, shorts, mini skirts
-              and slippers
-            </p>
-          </motion.div>
-        </div>
+        <motion.div
+          className="text-center mx-5"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
+            STRICTLY NOT ALLOWED
+          </h2>
+          <p className="text-2xl max-lg:text-lg max-md:text-[12px] uppercase">
+            t-shirts, polo shirts, printed clothes, jeans, shorts, mini skirts
+            and slippers
+          </p>
+        </motion.div>
         {/* Kindly wear */}
         <motion.h2
           className="font-bold text-3xl max-lg:text-2xl max-md:text-sm uppercase text-center mx-5"
@@ -197,7 +198,7 @@ function Attire() {
           <Image
             src={ThemeColor}
             alt="ThemeColor"
-            className="block mx-auto"
+            className="block mx-auto w-[200px] max-md:w-[100px]"
             quality={100}
           />
         </motion.div>

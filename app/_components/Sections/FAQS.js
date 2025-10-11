@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
-import FAQSImage from "@/app/_assets/FAQS/FAQS.png";
+import FAQSOne from "@/app/_assets/FAQS/FAQSOne.jpg";
+import FAQSTwo from "@/app/_assets/FAQS/FAQSTwo.jpg";
 
 import { Cinzel } from "next/font/google";
 
@@ -33,9 +34,39 @@ function FAQS() {
       </div>
 
       <div className="flex flex-col gap-10 py-20 max-lg:py-10">
-        <div className="mx-5">
-          <Image src={FAQSImage} alt="FAQ" className="mx-auto" quality={100} />
-        </div>
+        <motion.div
+          className="flex justify-center items-center mx-80 p-1 bg-[#e7e4e2] border-10 border-[#b6aa9d] shadow-2xl relative max-2xl:mx-50 max-xl:mx-20 max-md:mx-5"
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1 }}
+        >
+          {/* Left Page */}
+          <div className="relative w-[100%] transform skew-y-1 rotate-y-6 overflow-hidden shadow-md border-r border-[#e8e2d9]">
+            <Image
+              src={FAQSOne}
+              alt="Left Book Page"
+              quality={100}
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent pointer-events-none" />
+          </div>
+
+          {/* Book spine */}
+          <div className="w-[6px] bg-gradient-to-b from-[#cfc6b5] to-[#f5eeda] shadow-inner"></div>
+
+          {/* Right Page */}
+          <div className="relative w-[100%] transform -skew-y-1 -rotate-y-6 overflow-hidden shadow-md border-l border-[#e8e2d9]">
+            <Image
+              src={FAQSTwo}
+              alt="Right Book Page"
+              quality={100}
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-l from-black/10 to-transparent pointer-events-none" />
+          </div>
+        </motion.div>
+
         <div className="max-lg:mx-5">
           <div
             className={`${cinzel.className} text-[16px] flex flex-col gap-5 text-[#8f7563] w-[800px] mx-auto max-lg:w-[100%]`}

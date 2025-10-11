@@ -71,7 +71,7 @@ function MobileNavigation() {
             <li key={href}>
               <Link
                 href={href}
-                className="tracking-widest"
+                className="tracking-widest whitespace-nowrap"
                 onClick={(e) => handleNav(e, href)}
               >
                 {label}

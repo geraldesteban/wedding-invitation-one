@@ -21,7 +21,7 @@ function Home() {
         </h2>
       </div>
       <div className="py-10 max-md:py-2">
-        <div className="flex justify-center items-stretch gap-4 mx-40 max-lg:mx-5">
+        <div className="flex justify-center items-stretch gap-4 mx-40 max-xl:mx-20 max-md:mx-5">
           {[OlsOne, OlsTwo, OlsThree].map((img, idx) => (
             <div
               key={idx}

@@ -3,10 +3,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-@font-face {
-  font-family: "Hello Paris";
-  src: url("/fonts/HelloParis-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}

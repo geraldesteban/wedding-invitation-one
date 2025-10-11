@@ -81,12 +81,14 @@ function Location() {
           </span>
         </div>
 
-        <Image
-          src={QRCode}
-          alt="QRCode"
-          className="border-15 rounded-md border-[#ccaf94] mx-auto"
-          quality={100}
-        />
+        <div className="mx-5">
+          <Image
+            src={QRCode}
+            alt="QRCode"
+            className="border-15 rounded-md border-[#ccaf94] mx-auto"
+            quality={100}
+          />
+        </div>
       </div>
     </div>
   );
