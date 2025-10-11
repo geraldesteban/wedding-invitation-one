@@ -46,9 +46,9 @@ function DaysLeft() {
             <div className="flex justify-center items-end text-center">
               {/* DAYS */}
               <div className="flex flex-col items-center">
-                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                   {days}
-                  <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                  <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                     :
                   </span>
                 </span>
@@ -58,9 +58,9 @@ function DaysLeft() {
               </div>
               {/* HOURS */}
               <div className="flex flex-col items-center">
-                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                   {hours}
-                  <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                  <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                     :
                   </span>
                 </span>
@@ -68,9 +68,9 @@ function DaysLeft() {
               </div>
               {/* MINUTES */}
               <div className="flex flex-col items-center">
-                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                   {minutes}
-                  <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                  <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                     :
                   </span>
                 </span>
@@ -78,7 +78,7 @@ function DaysLeft() {
               </div>
               {/* SECONDS */}
               <div className="flex flex-col items-center">
-                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-4xl">
+                <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                   {seconds}
                 </span>
                 <span className="text-3xl font-bold max-sm:text-xl">SECS</span>

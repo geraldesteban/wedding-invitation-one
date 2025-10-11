@@ -24,8 +24,12 @@ export function useCountdown(targetDate) {
       }
 
       const days = Math.floor(totalSeconds / (60 * 60 * 24));
-      const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
-      const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+      const hours = String(
+        Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60))
+      ).padStart(2, "0");
+      const minutes = String(
+        Math.floor((totalSeconds % (60 * 60)) / 60)
+      ).padStart(2, "0");
       const seconds = totalSeconds % 60;
 
       setTimeLeft({ days, hours, minutes, seconds });

@@ -94,7 +94,7 @@ function Details() {
             transition={{ duration: 1 }}
           >
             Your cooperation in respecting our policy of not bringing uninvited
-            guests issincerely appreciated.
+            guests is sincerely appreciated.
           </motion.p>
           <motion.p
             className="text-3xl max-lg:text-lg max-md:text-[12px] font-bold"
@@ -103,7 +103,8 @@ function Details() {
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
           >
-            Please scroll until the end to confirm your attendance.
+            Please click "rsvp" button or scroll until the end to confirm your
+            attendance.
           </motion.p>
         </div>
       </div>
