@@ -7,8 +7,9 @@ const notoSerifDisplay = Noto_Serif_Display({
 
 import "@/app/_styles/globals.css";
 
-import FloatingRSVP from "./_components/FloatingRSVP";
-import MobileNavigation from "./_components/Navigation/MobileNavigation";
+import FloatingRSVP from "@/app/_components/FloatingRSVP";
+import FloatingMusic from "@/app/_components/FloatingMusic";
+import MobileNavigation from "@/app/_components/Navigation/MobileNavigation";
 
 import { Toaster } from "react-hot-toast";
 
@@ -50,6 +51,7 @@ function RootLayout({ children }) {
             },
           }}
         />
+        <FloatingMusic />
         <FloatingRSVP />
       </body>
     </html>
