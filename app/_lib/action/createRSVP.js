@@ -15,5 +15,8 @@ export async function createRSVP(formData) {
     return { success: false, message: "RSVP could not be created" };
   }
 
-  return { success: true, message: `Thank you ${firstName} ${lastName}!` };
+  return {
+    success: true,
+    message: `Thank you ${newRSVPData.firstName} ${newRSVPData.lastName}!`,
+  };
 }
