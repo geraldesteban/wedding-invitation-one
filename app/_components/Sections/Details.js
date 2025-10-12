@@ -22,8 +22,8 @@ function Details() {
         }}
       >
         <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
-        <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[70px] max-lg:h-[60px] max-md:h-[50px]"></div>
-        <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
+        <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[70px] max-lg:h-[60px] max-md:h-[40px]"></div>
+        <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-sm">
           OTHER WEDDING DETAILS
         </h2>
       </motion.div>
