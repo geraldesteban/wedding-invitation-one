@@ -18,7 +18,15 @@ function FAQS() {
       className="uppercase scroll-mt-[110px] max-lg:scroll-mt-[0px]"
     >
       <div className="relative w-full overflow-hidden">
-        <motion.div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3 mx-auto">
+        <motion.div
+          className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3 mx-auto"
+          initial={{ width: "0%", opacity: 0 }}
+          whileInView={{ width: "100%", opacity: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 1,
+          }}
+        >
           <h2 className="text-white text-center whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
             Frequently asked Questions
           </h2>

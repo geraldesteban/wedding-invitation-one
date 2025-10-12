@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import Image from "next/image";
 
 import DaysLeftImage from "@/app/_assets/DaysLeft/DaysLeft.png";
@@ -17,16 +19,21 @@ function DaysLeft() {
 
   return (
     <div className="bg-[#e7e4e2]">
-      <div className="flex justify-center items-center">
-        <div className="flex-1 relative rounded-bl-full rounded-tl-full z-10 w-full">
-          <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
-          <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[110px] w-full -z-10 max-xl:h-[90px] max-lg:h-[70px] max-md:h-[50px]"></div>
-          <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
-            DAYS LEFT BEFORE WE SAY “I DO”
-          </h2>
-        </div>
-        <div className="flex-1"></div>
-      </div>
+      <motion.div
+        className="relative rounded-bl-full rounded-tl-full z-10 w-full"
+        initial={{ width: "1px", opacity: 0 }}
+        whileInView={{ width: "80%", opacity: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{
+          duration: 1,
+        }}
+      >
+        <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
+        <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[70px] max-lg:h-[60px] max-md:h-[50px]"></div>
+        <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
+          DAYS LEFT BEFORE WE SAY “I DO”
+        </h2>
+      </motion.div>
 
       {/* CONTENT */}
       <div className="py-20 max-lg:py-10">

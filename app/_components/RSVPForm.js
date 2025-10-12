@@ -38,7 +38,7 @@ function RSVPForm() {
       setSuccessMessage(`Thank you, ${firstName} ${lastName}!`);
 
       // Countdown display
-      let counter = 3;
+      let counter = 5;
       setCountdown(counter);
       const countdownInterval = setInterval(() => {
         counter--;
