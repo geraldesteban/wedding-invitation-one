@@ -109,6 +109,11 @@ function Entourage() {
               </div>
             </div>
           </div>
+          <p
+            className={`${cinzel.className} flex flex-col gap-2 text-3xl max-lg:text-lg max-md:text-[12px] text-center`}
+          >
+            Myra balaoing
+          </p>
         </div>
 
         {/* Best Man and Maid of Honor */}
