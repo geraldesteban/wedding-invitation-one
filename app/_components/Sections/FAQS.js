@@ -61,7 +61,7 @@ function FAQS() {
           </div>
         </motion.div>
 
-        <div className="max-lg:mx-5 max-lg:text-justify">
+        <div className="max-lg:mx-5 text-justify">
           <div
             className={`${cinzel.className} text-[16px] flex flex-col gap-10 max-lg:gap-5 text-[#8f7563] w-[800px] mx-auto max-lg:w-full`}
           >
