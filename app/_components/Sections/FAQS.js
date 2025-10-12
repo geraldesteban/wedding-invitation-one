@@ -18,29 +18,15 @@ function FAQS() {
       className="uppercase scroll-mt-[110px] max-lg:scroll-mt-[0px]"
     >
       <div className="relative w-full overflow-hidden">
-        <motion.div
-          className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3 mx-auto"
-          initial={{ width: "0%", opacity: 0 }}
-          whileInView={{ width: "100%", opacity: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{
-            duration: 0.5,
-          }}
-        >
+        <motion.div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3 mx-auto">
           <h2 className="text-white text-center whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
             Frequently asked Questions
           </h2>
         </motion.div>
       </div>
 
-      <div className="flex flex-col gap-10 py-20 max-lg:py-10">
-        <motion.div
-          className="flex justify-center items-center mx-80 p-1 bg-[#e7e4e2] border-10 border-[#b6aa9d] shadow-2xl relative max-2xl:mx-50 max-xl:mx-20 max-md:mx-5"
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 1 }}
-        >
+      <div className="flex flex-col gap-20 max-lg:gap-10 py-20 max-lg:py-10">
+        <motion.div className="flex justify-center items-center mx-80 p-1 bg-[#e7e4e2] border-10 border-[#b6aa9d] shadow-2xl relative max-2xl:mx-50 max-xl:mx-20 max-md:mx-5">
           {/* Left Page */}
           <div className="relative w-[100%] transform skew-y-1 rotate-y-6 overflow-hidden shadow-md border-r border-[#e8e2d9]">
             <Image
@@ -67,16 +53,11 @@ function FAQS() {
           </div>
         </motion.div>
 
-        <div className="max-lg:mx-5">
+        <div className="max-lg:mx-5 max-lg:text-justify">
           <div
-            className={`${cinzel.className} text-[16px] flex flex-col gap-5 text-[#8f7563] w-[800px] mx-auto max-lg:w-[100%]`}
+            className={`${cinzel.className} text-[16px] flex flex-col gap-10 max-lg:gap-5 text-[#8f7563] w-[800px] mx-auto max-lg:w-full`}
           >
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 1 }}
-            >
+            <motion.div className="flex flex-col gap-10 max-lg:gap-5">
               <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
                 Can I take photos and videos?
               </h2>
@@ -88,12 +69,7 @@ function FAQS() {
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 1 }}
-            >
+            <motion.div className="flex flex-col gap-10 max-lg:gap-5">
               <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
                 Can I post on social media during the wedding?
               </h2>
@@ -104,12 +80,7 @@ function FAQS() {
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 1 }}
-            >
+            <motion.div className="flex flex-col gap-10 max-lg:gap-5">
               <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
                 Can I share this invitation with others?
               </h2>
@@ -119,12 +90,7 @@ function FAQS() {
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 1 }}
-            >
+            <motion.div className="flex flex-col gap-10 max-lg:gap-5">
               <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
                 Is there parking at the venue?
               </h2>
@@ -134,12 +100,7 @@ function FAQS() {
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 1 }}
-            >
+            <motion.div className="flex flex-col gap-10 max-lg:gap-5">
               <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
                 Can I bring a date or plus one?
               </h2>
@@ -152,12 +113,7 @@ function FAQS() {
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 1 }}
-            >
+            <motion.div className="flex flex-col gap-10 max-lg:gap-5">
               <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
                 Can I bring kids?
               </h2>
@@ -167,12 +123,7 @@ function FAQS() {
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 1 }}
-            >
+            <motion.div className="flex flex-col gap-10 max-lg:gap-5">
               <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
                 Can I choose where to sit?
               </h2>
@@ -183,12 +134,7 @@ function FAQS() {
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 1 }}
-            >
+            <motion.div className="flex flex-col gap-10 max-lg:gap-5">
               <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
                 Can I leave early?
               </h2>

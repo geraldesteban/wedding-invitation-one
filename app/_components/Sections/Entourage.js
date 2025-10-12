@@ -154,7 +154,7 @@ function Entourage() {
               className={`${cinzel.className} flex flex-col text-3xl max-lg:text-lg max-md:text-[12px]`}
             >
               <span>Regie Rico</span>
-              <span>MICHAEL Oski Alfonso</span>
+              <span>Michael Oski Alfonso</span>
               <span>Jerico Esteban</span>
               <span>Gerald Esteban</span>
             </div>

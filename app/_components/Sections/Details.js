@@ -12,15 +12,7 @@ function Details() {
       id="details"
       className="bg-[#e7e4e2] uppercase text-[#8f7563] flex flex-col gap-5 scroll-mt-[112px] max-lg:scroll-mt-[0px]"
     >
-      <motion.div
-        className="relative rounded-bl-full rounded-tl-full z-10 w-full"
-        initial={{ width: "1px", opacity: 0 }}
-        whileInView={{ width: "80%", opacity: 1 }}
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{
-          duration: 1,
-        }}
-      >
+      <motion.div className="relative rounded-bl-full rounded-tl-full z-10 w-full">
         <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
         <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[70px] max-lg:h-[60px] max-md:h-[50px]"></div>
         <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
@@ -31,14 +23,9 @@ function Details() {
       {/* Content */}
       <div className="max-lg:mx-5 py-20 max-lg:py-10">
         <div
-          className={`${cinzel.className} flex flex-col gap-10 max-lg:gap-5 text-center w-[50%] mx-auto max-lg:w-full`}
+          className={`${cinzel.className} flex flex-col gap-10 max-lg:gap-5 text-center max-lg:text-justify w-[50%] mx-auto max-lg:w-full`}
         >
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 1 }}
-          >
+          <motion.div className="flex flex-col gap-10 max-lg:gap-5">
             <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
               Arrival
             </h2>
@@ -51,12 +38,7 @@ function Details() {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 1 }}
-          >
+          <motion.div className="flex flex-col gap-10 max-lg:gap-5">
             <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
               Gift
             </h2>
@@ -68,12 +50,7 @@ function Details() {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 1 }}
-          >
+          <motion.div className="flex flex-col gap-10 max-lg:gap-5">
             <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
               RSVP
             </h2>
@@ -86,23 +63,11 @@ function Details() {
             </p>
           </motion.div>
 
-          <motion.p
-            className="text-3xl max-lg:text-lg max-md:text-[12px]"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 1 }}
-          >
+          <motion.p className="text-3xl max-lg:text-lg max-md:text-[12px]">
             Your cooperation in respecting our policy of not bringing uninvited
             guests is sincerely appreciated.
           </motion.p>
-          <motion.p
-            className="text-3xl max-lg:text-lg max-md:text-[12px] font-bold"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 1 }}
-          >
+          <motion.p className="text-3xl max-lg:text-lg max-md:text-[12px] font-bold">
             Please click &quot;rsvp&quot; button or scroll until the end to
             confirm your attendance.
           </motion.p>

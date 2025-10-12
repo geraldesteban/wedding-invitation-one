@@ -175,8 +175,8 @@ function Attire() {
             STRICTLY NOT ALLOWED
           </h2>
           <p className="text-2xl max-lg:text-lg max-md:text-[12px] uppercase">
-            t-shirts, polo shirts, printed clothes, jeans, shorts, mini skirts
-            and slippers
+            t-shirts, polo shirts, printed clothes, jeans, shorts, mini
+            dress/skirts and slippers
           </p>
         </motion.div>
         {/* Kindly wear */}
@@ -198,7 +198,7 @@ function Attire() {
           <Image
             src={ThemeColor}
             alt="ThemeColor"
-            className="block mx-auto w-[200px] max-md:w-[100px]"
+            className="block mx-auto w-[200px] max-md:w-[150px]"
             quality={100}
           />
         </motion.div>
