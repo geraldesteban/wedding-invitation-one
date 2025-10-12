@@ -103,8 +103,8 @@ function Details() {
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
           >
-            Please click "rsvp" button or scroll until the end to confirm your
-            attendance.
+            Please click &quot;rsvp&quot; button or scroll until the end to
+            confirm your attendance.
           </motion.p>
         </div>
       </div>

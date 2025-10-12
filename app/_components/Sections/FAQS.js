@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import FAQSOne from "@/app/_assets/FAQS/FAQSOne.jpg";
-// import FAQSTwo from "@/app/_assets/FAQS/FAQSTwo.jpg";
+import FAQSTwo from "@/app/_assets/FAQS/FAQSTwo.jpg";
 
 import { Cinzel } from "next/font/google";
 
