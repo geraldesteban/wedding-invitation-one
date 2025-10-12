@@ -23,7 +23,7 @@ function Details() {
       {/* Content */}
       <div className="max-lg:mx-5 py-20 max-lg:py-10">
         <div
-          className={`${cinzel.className} flex flex-col gap-10 max-lg:gap-5 text-center max-lg:text-justify w-[50%] mx-auto max-lg:w-full`}
+          className={`${cinzel.className} flex flex-col gap-10 max-lg:gap-5 text-center w-[50%] mx-auto max-lg:w-full`}
         >
           <motion.div className="flex flex-col gap-10 max-lg:gap-5">
             <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
