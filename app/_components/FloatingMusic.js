@@ -41,7 +41,7 @@ function FloatingMusic() {
   return (
     <div
       onClick={toggleMusic}
-      className="cursor-pointer fixed bottom-6 left-6 flex flex-col items-center justify-center bg-[#9a7e66] text-white px-6 py-4 rounded-full shadow-lg hover:opacity-85 transition-all duration-300 z-50"
+      className="cursor-pointer fixed bottom-6 left-6 flex flex-col items-center justify-center bg-[#9a7e66] text-white px-12 py-6  max-lg:py-4 max-lg:px-10 max-md:p-3 max-md:px-8 rounded-full shadow-lg hover:opacity-85 transition-all duration-300 z-50"
     >
       {/* Animated Equalizer Bars */}
       <div className="flex items-end gap-[3px] h-4">

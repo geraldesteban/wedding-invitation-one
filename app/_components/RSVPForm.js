@@ -62,12 +62,17 @@ function RSVPForm() {
 
   return (
     <div
-      className={`${cinzel.className} flex flex-col items-center gap-6 max-lg:gap-4 max-md:gap-3 max-2xl:mx-20 max-lg:mx-5 max-xl:pb-10`}
+      className={`${cinzel.className} flex flex-col items-center max-xl:pb-10`}
     >
       {!showForm && (
         <div className="text-center text-[#9a7e66] animate-fadeIn">
-          <h2 className="text-3xl font-medium mb-3">{successMessage}</h2>
-          <p className="text-xl text-[#bda89b]">
+          <h2 className="text-lg max-md:text-[12px] font-bold">
+            {successMessage}
+          </h2>
+          <p className="text-lg max-md:text-[12px]">
+            Your attendance has been confirmed. See you on our wedding day!
+          </p>
+          <p className="text-lg max-md:text-[12px] text-[#9a7e66]">
             Returning to form in{" "}
             <span className="font-semibold">{countdown}</span>...
           </p>
@@ -78,29 +83,33 @@ function RSVPForm() {
       {showForm && (
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col items-center gap-6 w-full animate-fadeIn"
+          className="flex flex-col items-center gap-3 w-full animate-fadeIn"
         >
           {/* First & Last Name Inputs */}
-          <div className="flex gap-5 w-full max-lg:flex-col max-md:gap-2">
-            <div className="flex flex-col gap-5 max-lg:gap-2">
-              <label className="text-4xl max-xl:text-2xl">First Name</label>
+          <div className="flex gap-2 w-full max-lg:flex-col">
+            <div className="flex flex-1 flex-col gap-2">
+              <label className="text-lg max-md:text-[12px] whitespace-nowrap font-bold">
+                First Name
+              </label>
               <input
                 type="text"
                 name="firstName"
                 placeholder="First Name"
                 pattern="[A-Za-z\s]+"
-                className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-1xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
+                className="w-full text-lg max-md:text-[12px] border border-[#9a7e66] bg-white text-[#7f523d] pl-5 py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                 required
               />
             </div>
-            <div className="flex flex-col gap-5 max-lg:gap-2">
-              <label className="text-4xl max-xl:text-2xl">Last Name</label>
+            <div className="flex flex-1 flex-col gap-2">
+              <label className="text-lg max-md:text-[12px] whitespace-nowrap font-bold">
+                Last Name
+              </label>
               <input
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
                 pattern="[A-Za-z\s]+"
-                className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-1xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
+                className="w-full text-lg max-md:text-[12px] border border-[#9a7e66] bg-white text-[#7f523d] pl-5 py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                 required
               />
             </div>
@@ -110,7 +119,7 @@ function RSVPForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`bg-[#9a7e66] w-full text-white py-4 px-10 text-[30px] cursor-pointer rounded-md transition-all duration-300 max-lg:py-3 max-lg:px-8 max-lg:text-[25px] max-md:text-[20px] ${
+            className={`bg-[#9a7e66] text-lg max-md:text-[12px] w-full text-white py-4 px-10 cursor-pointer rounded-md transition-all duration-300 max-lg:py-3 max-lg:px-8 ${
               isSubmitting
                 ? "opacity-70 cursor-not-allowed"
                 : "lg:hover:opacity-80"
