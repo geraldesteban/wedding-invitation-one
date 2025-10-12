@@ -29,8 +29,8 @@ function DaysLeft() {
         }}
       >
         <div className="bg-[#ccaf94] rounded-br-full rounded-tr-full absolute h-full w-full -z-5"></div>
-        <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[70px] max-lg:h-[60px] max-md:h-[50px]"></div>
-        <h2 className="text-white text-center z-10 py-2 mx-5 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
+        <div className="bg-[#d8c2b4] rounded-br-full rounded-tr-full absolute h-[75px] w-full -z-10 max-xl:h-[70px] max-lg:h-[60px] max-md:h-[40px]"></div>
+        <h2 className="text-white text-center z-10 py-2 whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-sm">
           DAYS LEFT BEFORE WE SAY “I DO”
         </h2>
       </motion.div>
@@ -52,43 +52,41 @@ function DaysLeft() {
           >
             <div className="flex justify-center items-end text-center">
               {/* DAYS */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col gap-1 items-center">
                 <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                   {days}
                   <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                     :
                   </span>
                 </span>
-                <span className="text-3xl font-semibold max-sm:text-xl">
-                  DAYS
-                </span>
+                <span className="text-3xl max-sm:text-lg">DAYS</span>
               </div>
               {/* HOURS */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col gap-1 items-center">
                 <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                   {hours}
                   <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                     :
                   </span>
                 </span>
-                <span className="text-3xl font-bold max-sm:text-xl">HOURS</span>
+                <span className="text-3xl max-sm:text-lg">HOURS</span>
               </div>
               {/* MINUTES */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col gap-1 items-center">
                 <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                   {minutes}
                   <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                     :
                   </span>
                 </span>
-                <span className="text-3xl font-bold max-sm:text-xl">MINS</span>
+                <span className="text-3xl max-sm:text-lg">MINS</span>
               </div>
               {/* SECONDS */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col gap-1 items-center">
                 <span className="text-9xl font-semibold leading-none max-md:text-8xl max-sm:text-5xl">
                   {seconds}
                 </span>
-                <span className="text-3xl font-bold max-sm:text-xl">SECS</span>
+                <span className="text-3xl max-sm:text-lg">SECS</span>
               </div>
             </div>
           </div>

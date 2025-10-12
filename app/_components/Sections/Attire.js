@@ -66,13 +66,7 @@ function Attire() {
           <p className="text-2xl max-lg:text-lg max-md:text-[12px]">BARONG</p>
         </motion.div>
         {/* Filipiniana Barong */}
-        <motion.div
-          className="flex justify-center items-center mx-5"
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 1 }}
-        >
+        <motion.div className="flex justify-center items-center mx-5">
           <Image
             src={Filipiniana}
             alt="Filipiniana"
@@ -115,13 +109,7 @@ function Attire() {
             FORMAL TOP, LONG SKIRTS, SLACKS
           </p>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 1 }}
-          className="mx-5"
-        >
+        <motion.div className="mx-5">
           <Image
             src={Ladies}
             alt="Ladies"
@@ -149,13 +137,7 @@ function Attire() {
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 1 }}
-          className="mx-5"
-        >
+        <motion.div className="mx-5">
           <Image
             src={Gentleman}
             alt="Gentleman"
@@ -189,19 +171,13 @@ function Attire() {
         >
           Kindly wear these colors on our special day.
         </motion.h2>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 1 }}
-        >
-          <Image
-            src={ThemeColor}
-            alt="ThemeColor"
-            className="block mx-auto w-[200px] max-md:w-[150px]"
-            quality={100}
-          />
-        </motion.div>
+
+        <Image
+          src={ThemeColor}
+          alt="ThemeColor"
+          className="block mx-auto w-[200px] max-md:w-[150px]"
+          quality={100}
+        />
       </div>
     </div>
   );
