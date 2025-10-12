@@ -14,7 +14,7 @@ function RSVPForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [showForm, setShowForm] = useState(true);
-  const [countdown, setCountdown] = useState(3); // ⏳ countdown before form returns
+  const [countdown, setCountdown] = useState(3);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -33,26 +33,23 @@ function RSVPForm() {
       setButtonText("Confirmed!");
       form.reset();
 
-      // Hide form and show success message
       setShowForm(false);
       setSuccessMessage(`Thank you, ${firstName} ${lastName}!`);
 
-      // Countdown display
-      let counter = 5;
+      let counter = 10;
       setCountdown(counter);
       const countdownInterval = setInterval(() => {
         counter--;
         setCountdown(counter);
       }, 1000);
 
-      // After 3 seconds, show form again
       setTimeout(() => {
         clearInterval(countdownInterval);
         setButtonText("Confirm");
         setSuccessMessage("");
         setShowForm(true);
         setIsSubmitting(false);
-      }, 3000);
+      }, 10000);
     } else {
       toast.error(result.message);
       setButtonText("Try Again");
@@ -67,7 +64,6 @@ function RSVPForm() {
     <div
       className={`${cinzel.className} flex flex-col items-center gap-6 max-lg:gap-4 max-md:gap-3 max-2xl:mx-20 max-lg:mx-5 max-xl:pb-10`}
     >
-      {/* ✅ Success Message */}
       {!showForm && (
         <div className="text-center text-[#9a7e66] animate-fadeIn">
           <h2 className="text-3xl font-medium mb-3">{successMessage}</h2>
@@ -78,7 +74,7 @@ function RSVPForm() {
         </div>
       )}
 
-      {/* 📝 RSVP Form */}
+      {/* RSVP Form */}
       {showForm && (
         <form
           onSubmit={handleSubmit}
@@ -92,7 +88,7 @@ function RSVPForm() {
                 type="text"
                 name="firstName"
                 placeholder="First Name"
-                pattern="[A-Za-z\\s]+"
+                pattern="[A-Za-z\s]+"
                 className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-1xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                 required
               />
@@ -103,7 +99,7 @@ function RSVPForm() {
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
-                pattern="[A-Za-z\\s]+"
+                pattern="[A-Za-z\s]+"
                 className="w-full border border-[#9a7e66] bg-white text-[#7f523d] pl-5 text-1xl max-lg:text-2xl max-md:text-xl py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                 required
               />

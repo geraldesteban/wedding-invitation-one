@@ -30,7 +30,7 @@ function RootLayout({ children }) {
           <MobileNavigation />
         </div>
         <main>{children}</main>
-        <Toaster
+        {/* <Toaster
           position="top-center"
           gutter={12}
           containerStyle={{ margin: "8px" }}
@@ -50,7 +50,7 @@ function RootLayout({ children }) {
               zIndex: 100,
             },
           }}
-        />
+        /> */}
         <FloatingMusic />
         <FloatingRSVP />
       </body>
