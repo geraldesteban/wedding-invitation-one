@@ -76,7 +76,7 @@ function Details() {
             guests is sincerely appreciated.
           </motion.p>
           <motion.p className="text-3xl max-lg:text-lg max-md:text-[12px] font-bold">
-            Please click &quot;rsvp&quot; button or scroll until the end to
+            Please click the &quot;rsvp&quot; button or scroll until the end to
             confirm your attendance.
           </motion.p>
         </div>

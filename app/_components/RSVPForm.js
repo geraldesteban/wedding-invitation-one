@@ -36,7 +36,7 @@ function RSVPForm() {
       setShowForm(false);
       setSuccessMessage(`Thank you, ${firstName} ${lastName}!`);
 
-      let counter = 10;
+      let counter = 15;
       setCountdown(counter);
       const countdownInterval = setInterval(() => {
         counter--;
@@ -49,7 +49,7 @@ function RSVPForm() {
         setSuccessMessage("");
         setShowForm(true);
         setIsSubmitting(false);
-      }, 10000);
+      }, 15000);
     } else {
       toast.error(result.message);
       setButtonText("Try Again");
@@ -69,7 +69,7 @@ function RSVPForm() {
           <h2 className="text-lg max-md:text-[12px] font-bold">
             {successMessage}
           </h2>
-          <p className="text-lg max-md:text-[12px]">
+          <p className="text-lg max-md:text-[12px] font-bold">
             Your attendance has been confirmed. See you on our wedding day!
           </p>
           <p className="text-lg max-md:text-[12px] text-[#9a7e66]">
@@ -92,11 +92,9 @@ function RSVPForm() {
                 First Name
               </label>
               <input
-                type="text"
                 name="firstName"
                 placeholder="First Name"
-                pattern="[A-Za-z\\s]+"
-                className="w-full text-[16px] border border-[#9a7e66] bg-white text-[#7f523d] pl-5 py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
+                className="w-full text-sm border border-[#9a7e66] bg-white text-[#7f523d] pl-5 max-md:pl-3 py-3 rounded-md outline-none placeholder:text-[#7f523d] max-md:py-2"
                 required
               />
             </div>
@@ -105,11 +103,9 @@ function RSVPForm() {
                 Last Name
               </label>
               <input
-                type="text"
                 name="lastName"
                 placeholder="Last Name"
-                pattern="[A-Za-z\\s]+"
-                className="w-full text-[16px] border border-[#9a7e66] bg-white text-[#7f523d] pl-5 py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
+                className="w-full text-sm border border-[#9a7e66] bg-white text-[#7f523d] pl-5 max-md:pl-3 py-3 rounded-md outline-none placeholder:text-[#7f523d] max-md:py-2"
                 required
               />
             </div>
@@ -119,7 +115,7 @@ function RSVPForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`bg-[#9a7e66] text-lg max-md:text-[12px] w-full text-white py-4 px-10 cursor-pointer rounded-md transition-all duration-300 max-lg:py-3 max-lg:px-8 ${
+            className={`bg-[#9a7e66] text-lg font-bold max-md:text-[12px] w-full text-white py-4 px-10 cursor-pointer rounded-md transition-all duration-300 max-lg:py-3 max-lg:px-8 ${
               isSubmitting
                 ? "opacity-70 cursor-not-allowed"
                 : "lg:hover:opacity-80"
