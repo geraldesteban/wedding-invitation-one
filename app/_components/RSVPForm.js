@@ -94,7 +94,8 @@ function RSVPForm() {
               <input
                 name="firstName"
                 placeholder="First Name"
-                className="w-full text-sm border border-[#9a7e66] bg-white text-[#7f523d] pl-5 max-md:pl-3 py-3 rounded-md outline-none placeholder:text-[#7f523d] max-md:py-2"
+                className="w-full text-base border border-[#9a7e66] bg-white text-[#7f523d] pl-5 max-md:pl-3 py-3 rounded-md outline-none placeholder:text-[#7f523d] max-md:py-2"
+                style={{ fontSize: "16px" }} // ✅ Prevents zoom
                 required
               />
             </div>
@@ -105,7 +106,8 @@ function RSVPForm() {
               <input
                 name="lastName"
                 placeholder="Last Name"
-                className="w-full text-sm border border-[#9a7e66] bg-white text-[#7f523d] pl-5 max-md:pl-3 py-3 rounded-md outline-none placeholder:text-[#7f523d] max-md:py-2"
+                className="w-full text-base border border-[#9a7e66] bg-white text-[#7f523d] pl-5 max-md:pl-3 py-3 rounded-md outline-none placeholder:text-[#7f523d] max-md:py-2"
+                style={{ fontSize: "16px" }} // ✅ Prevents zoom
                 required
               />
             </div>
