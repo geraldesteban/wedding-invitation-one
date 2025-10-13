@@ -66,10 +66,10 @@ function FAQS() {
             className={`${cinzel.className} text-[16px] flex flex-col gap-10 max-lg:gap-5 text-[#8f7563] w-[800px] mx-auto max-lg:w-full`}
           >
             <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-              <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
                 Can I take photos and videos?
               </h2>
-              <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
                 Yes, you may take photos and videos — we’d love for you to
                 capture the memories! We kindly ask that you remain in your seat
                 and avoid blocking the aisle so that everyone can enjoy the
@@ -78,10 +78,10 @@ function FAQS() {
             </motion.div>
 
             <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-              <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
                 Can I post on social media during the wedding?
               </h2>
-              <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
                 We kindly ask that you wait until the day after the wedding
                 before sharing photos and videos online. This way, everyone can
                 be fully present in the moment and enjoy celebrating with us.
@@ -89,30 +89,30 @@ function FAQS() {
             </motion.div>
 
             <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-              <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
                 Can I share this invitation with others?
               </h2>
-              <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
                 No, please keep this invitation private. We want to keep our
                 wedding intimate, with only our invited guests present.
               </p>
             </motion.div>
 
             <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-              <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
                 Is there parking at the venue?
               </h2>
-              <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
                 Yes, there is ample parking space for all guests inside the
                 venue.
               </p>
             </motion.div>
 
             <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-              <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
                 Can I bring a date or plus one?
               </h2>
-              <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
                 We truly wish we could celebrate with everyone, but to keep our
                 celebration intimate, attendance is limited to the guests we
                 have directly invited. If you were given a plus one, we’ll let
@@ -122,20 +122,20 @@ function FAQS() {
             </motion.div>
 
             <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-              <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
                 Can I bring kids?
               </h2>
-              <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
                 We love kids, but for this day, only the children we personally
                 invited can come. Thank you for understanding.
               </p>
             </motion.div>
 
             <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-              <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
                 Can I choose where to sit?
               </h2>
-              <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
                 There will be a seating arrangement for all guests. You will be
                 guided in finding your seat to keep the ceremony and reception
                 organized and comfortable for everyone.
@@ -143,10 +143,10 @@ function FAQS() {
             </motion.div>
 
             <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-              <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+              <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
                 Can I leave early?
               </h2>
-              <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+              <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
                 Your presence means so much to us. We’d love for you to stay
                 until the end of the program and celebrate every moment with us.
                 It would be wonderful if you could also join us at the

@@ -30,10 +30,6 @@ function YouAreInvited() {
     <div className="text-[#8f7563] bg-[#e7e4e2] text-center uppercase">
       <motion.div
         className={`flex flex-col gap-5 mx-5 py-20 whitespace-nowrap max-lg:py-10 text-5xl max-lg:text-3xl max-md:text-xl`}
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 1 }}
       >
         <span>You are invited</span>
         <span className="whitespace-normal">to the wedding celebration of</span>

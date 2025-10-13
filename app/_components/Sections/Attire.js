@@ -21,15 +21,7 @@ function Attire() {
       className={`${cinzel.className} scroll-mt-[110px] max-lg:scroll-mt-[0px]`}
     >
       <div className="relative w-full overflow-hidden">
-        <motion.div
-          className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3 mx-auto"
-          initial={{ width: "0%", opacity: 0 }}
-          whileInView={{ width: "100%", opacity: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{
-            duration: 1,
-          }}
-        >
+        <motion.div className="bg-[#b6aa9d] p-5 border-b-8 border-t-8 border-[#e7e4e2] max-lg:p-3 mx-auto">
           <h2 className="text-white text-center whitespace-nowrap text-5xl max-lg:text-3xl max-md:text-xl">
             ATTIRE GUIDE
           </h2>
@@ -37,25 +29,13 @@ function Attire() {
       </div>
       {/* Content */}
       <div className="text-[#8f7563] py-20 max-lg:py-10 flex flex-col gap-10">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          className="mx-5"
-        >
+        <motion.div className="mx-5">
           <h2 className="text-4xl max-lg:text-3xl max-md:text-xl text-center font-bold">
             WE KINDLY REQUEST FORMAL ATTIRE.
           </h2>
         </motion.div>
         {/* Principal Sponsors */}
-        <motion.div
-          className="text-center mx-5"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-        >
+        <motion.div className="text-center mx-5">
           <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
             PRINCIPAL SPONSORS
           </h2>
@@ -81,24 +61,13 @@ function Attire() {
           />
         </motion.div>
         {/* Guests */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-        >
+        <motion.div>
           <h2 className="text-4xl max-lg:text-3xl max-md:text-xl text-center font-bold mx-5">
             GUESTS
           </h2>
         </motion.div>
         {/* Ladies */}
-        <motion.div
-          className="text-center mx-5"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-        >
+        <motion.div className="text-center mx-5">
           <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
             LADIES
           </h2>
@@ -117,15 +86,8 @@ function Attire() {
             quality={100}
           />
         </motion.div>
-
         {/* Gentleman */}
-        <motion.div
-          className="text-center mx-5"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-        >
+        <motion.div className="text-center mx-5">
           <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
             GENTLEMEN
           </h2>
@@ -146,13 +108,7 @@ function Attire() {
           />
         </motion.div>
         {/* Strictly not allowed */}
-        <motion.div
-          className="text-center mx-5"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-        >
+        <motion.div className="text-center mx-5">
           <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
             STRICTLY NOT ALLOWED
           </h2>
@@ -162,16 +118,9 @@ function Attire() {
           </p>
         </motion.div>
         {/* Kindly wear */}
-        <motion.h2
-          className="font-bold text-3xl max-lg:text-2xl max-md:text-sm uppercase text-center mx-5"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-        >
+        <motion.h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm uppercase text-center mx-5">
           Kindly wear these colors on our special day.
         </motion.h2>
-
         <Image
           src={ThemeColor}
           alt="ThemeColor"

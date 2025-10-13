@@ -40,22 +40,12 @@ function LoveStory() {
       <div className="flex flex-col gap-10 pt-20 pb-30 max-lg:gap-0 max-lg:pt-10 max-lg:pb-5 max-md:pt-5 max-lg:flex-col">
         <motion.div
           className={`${cinzel.className} flex flex-col gap-2 text-[#8f7563] text-3xl max-md:text-sm ml-10 max-lg:ml-5 max-lg:self-start z-50`}
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 1 }}
         >
           <p>2007 - We first met</p>
           <p>2023 - Reunited and became a couple</p>
           <p>2025 - We’re getting married</p>
         </motion.div>
-        <motion.div
-          className="flex items-center mx-5 max-lg:py-10 max-lg:flex-col-reverse max-lg:gap-10"
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 1 }}
-        >
+        <motion.div className="flex items-center mx-5 max-lg:py-10 max-lg:flex-col-reverse max-lg:gap-10">
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 30, repeat: Infinity, ease: "linear" }}

@@ -31,13 +31,13 @@ function Details() {
       {/* Content */}
       <div className="max-lg:mx-5 py-20 max-lg:py-10">
         <div
-          className={`${cinzel.className} flex flex-col gap-10 max-lg:gap-5 text-center w-[50%] mx-auto max-lg:w-full`}
+          className={`${cinzel.className} flex flex-col gap-10 max-lg:gap-5 text-center w-[60%] mx-auto max-lg:w-full`}
         >
           <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+            <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
               Arrival
             </h2>
-            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+            <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
               The ceremony will begin at{" "}
               <span className="font-bold">4:00 PM</span>. We kindly ask our
               guests to arrive at <span className="font-bold">3:00 PM</span> to
@@ -47,10 +47,10 @@ function Details() {
           </motion.div>
 
           <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+            <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
               Gift
             </h2>
-            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+            <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
               Your presence at our wedding is the greatest gift for us. Should
               you wish to bless us more, we would deeply appreciate monetary
               gifts rather than in-kind, as these will help us begin our life
@@ -59,10 +59,10 @@ function Details() {
           </motion.div>
 
           <motion.div className="flex flex-col gap-10 max-lg:gap-5">
-            <h2 className="font-bold text-4xl max-lg:text-2xl max-md:text-sm">
+            <h2 className="font-bold text-3xl max-lg:text-2xl max-md:text-sm">
               RSVP
             </h2>
-            <p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+            <p className="text-2xl max-lg:text-lg max-md:text-[12px]">
               Please confirm your attendance on or before October 25, 2025.
               Kindly note that only those who confirm their attendance will be
               included in the final guest list. For us to keep the celebration
@@ -71,11 +71,11 @@ function Details() {
             </p>
           </motion.div>
 
-          <motion.p className="text-3xl max-lg:text-lg max-md:text-[12px]">
+          <motion.p className="text-2xl max-lg:text-lg max-md:text-[12px]">
             Your cooperation in respecting our policy of not bringing uninvited
             guests is sincerely appreciated.
           </motion.p>
-          <motion.p className="text-3xl max-lg:text-lg max-md:text-[12px] font-bold">
+          <motion.p className="text-2xl max-lg:text-lg max-md:text-[12px] font-bold">
             Please click the &quot;rsvp&quot; button or scroll until the end to
             confirm your attendance.
           </motion.p>
