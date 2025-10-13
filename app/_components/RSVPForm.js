@@ -88,28 +88,28 @@ function RSVPForm() {
           {/* First & Last Name Inputs */}
           <div className="flex gap-2 w-full max-lg:flex-col">
             <div className="flex flex-1 flex-col gap-2">
-              <label className="text-lg max-md:text-[12px] whitespace-nowrap font-bold">
+              <label className="text-lg max-md:text-sm whitespace-nowrap font-bold">
                 First Name
               </label>
               <input
                 type="text"
                 name="firstName"
                 placeholder="First Name"
-                pattern="[A-Za-z\s]+"
-                className="w-full text-lg max-md:text-[12px] border border-[#9a7e66] bg-white text-[#7f523d] pl-5 py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
+                pattern="[A-Za-z\\s]+"
+                className="w-full text-[16px] border border-[#9a7e66] bg-white text-[#7f523d] pl-5 py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                 required
               />
             </div>
             <div className="flex flex-1 flex-col gap-2">
-              <label className="text-lg max-md:text-[12px] whitespace-nowrap font-bold">
+              <label className="text-lg max-md:text-sm whitespace-nowrap font-bold">
                 Last Name
               </label>
               <input
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
-                pattern="[A-Za-z\s]+"
-                className="w-full text-lg max-md:text-[12px] border border-[#9a7e66] bg-white text-[#7f523d] pl-5 py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
+                pattern="[A-Za-z\\s]+"
+                className="w-full text-[16px] border border-[#9a7e66] bg-white text-[#7f523d] pl-5 py-3 rounded-md outline-none focus:ring-1 focus:ring-[#9a7e66] placeholder:text-[#bda89b] max-md:py-2"
                 required
               />
             </div>
