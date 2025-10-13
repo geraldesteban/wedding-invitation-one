@@ -63,10 +63,6 @@ function YouAreInvited() {
 
       <motion.div
         className={`${cinzel.className} flex flex-col gap-10 py-20 max-lg:py-10 max-lg:gap-5`}
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 1 }}
       >
         <div className="flex flex-col">
           <p className="text-3xl max-lg:text-xl max-md:text-lg">
